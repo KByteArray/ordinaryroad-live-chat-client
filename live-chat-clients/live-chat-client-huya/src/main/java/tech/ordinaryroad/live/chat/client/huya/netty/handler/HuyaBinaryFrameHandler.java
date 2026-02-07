@@ -38,6 +38,7 @@ import tech.ordinaryroad.live.chat.client.codec.huya.msg.dto.PropsItem;
 import tech.ordinaryroad.live.chat.client.codec.huya.msg.dto.WSMsgItem;
 import tech.ordinaryroad.live.chat.client.codec.huya.msg.factory.HuyaMsgFactory;
 import tech.ordinaryroad.live.chat.client.codec.huya.util.HuyaCodecUtil;
+import tech.ordinaryroad.live.chat.client.codec.huya.util.HuyaSecurityUtil;
 import tech.ordinaryroad.live.chat.client.commons.base.msg.ICmdMsg;
 import tech.ordinaryroad.live.chat.client.commons.base.msg.IMsg;
 import tech.ordinaryroad.live.chat.client.huya.client.HuyaLiveChatClient;
@@ -129,6 +130,39 @@ public class HuyaBinaryFrameHandler extends BaseNettyClientBinaryFrameHandler<Hu
                     for (PropsItem propsItem : getPropsListRsp.getVPropsItemList()) {
                         HuyaApis.GIFT_ITEMS.put(propsItem.getIPropsId(), propsItem);
                     }
+                    break;
+                }
+                case getSequence: {
+                    HuyaLiveChatClient.PendingSendGift pending = client.getAndClearPendingSendGift();
+                    if (pending == null) {
+                        if (log.isDebugEnabled()) {
+                            log.debug("getSequence 响应收到，但无待发送礼物上下文，忽略");
+                        }
+                        break;
+                    }
+                    GetSequenceRsp getSequenceRsp = new GetSequenceRsp();
+                    getSequenceRsp = wupRsp.getUniAttribute().getByClass("tRsp", getSequenceRsp);
+                    int iRetCode = getSequenceRsp.getIRetCode();
+                    String sSeq;
+                    if (iRetCode == 0) {
+                        sSeq = getSequenceRsp.getSSeq();
+                        log.debug("礼物payId获取成功，sSeq: {}", sSeq);
+                    } else {
+                        sSeq = HuyaSecurityUtil.generateLocalSequence();
+                        log.warn("礼物payId获取失败,使用本地生成的序: {}", sSeq);
+                    }
+                    WebSocketCommand webSocketCommand = HuyaMsgFactory.getInstance(client.getConfig().getRoomId()).createSendGiftReq(client.getRoomInitResult(), sSeq, pending.getGiftId(), pending.getGiftCount(), client.getConfig().getVer(), client.getConfig().getCookie());
+                    client.send(webSocketCommand, () -> {
+                        log.debug("送礼物请求发送成功，payId: {}, giftId: {}, giftCount: {}", sSeq, pending.getGiftId(), pending.getGiftCount());
+                        if (pending.getSuccess() != null) {
+                            pending.getSuccess().run();
+                        }
+                    }, (e) -> {
+                        log.error("送礼物请求发送失败，payId: {}, giftId: {}, giftCount: {}, error: {}", sSeq, pending.getGiftId(), pending.getGiftCount(), e.getMessage());
+                        if (pending.getFailed() != null) {
+                            pending.getFailed().accept(e);
+                        }
+                    });
                     break;
                 }
                 default: {

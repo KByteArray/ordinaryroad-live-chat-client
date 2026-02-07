@@ -30,11 +30,13 @@ import cn.hutool.core.util.StrUtil;
 import com.qq.tars.protocol.tars.TarsInputStream;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
+import tech.ordinaryroad.live.chat.client.codec.huya.api.HuyaApis;
 import tech.ordinaryroad.live.chat.client.codec.huya.constant.HuyaCmdEnum;
 import tech.ordinaryroad.live.chat.client.codec.huya.msg.MessageNoticeMsg;
 import tech.ordinaryroad.live.chat.client.codec.huya.msg.SendItemSubBroadcastPacketMsg;
 import tech.ordinaryroad.live.chat.client.codec.huya.msg.VipEnterBannerMsg;
 import tech.ordinaryroad.live.chat.client.codec.huya.msg.WSPushMessage;
+import tech.ordinaryroad.live.chat.client.codec.huya.msg.dto.PropsItem;
 import tech.ordinaryroad.live.chat.client.codec.huya.msg.dto.WSMsgItem;
 import tech.ordinaryroad.live.chat.client.codec.huya.util.HuyaCodecUtil;
 import tech.ordinaryroad.live.chat.client.commons.base.msg.ICmdMsg;
@@ -77,17 +79,17 @@ class HuyaLiveChatClientTest {
 
                 .roomId("bagea")
 
-                .roomId(333003)
 //                .roomId(575757)
 
                 .roomId(29785782)
 
-                .roomId(333003)
                 // bagea
                 .roomId(189201)
                 .roomId("bagea")
                 // 小超梦
                 .roomId("257085")
+
+                .roomId(333003)
                 .build();
 
         client = new HuyaLiveChatClient(config, new IHuyaMsgListener() {
@@ -210,6 +212,58 @@ class HuyaLiveChatClientTest {
             @Override
             public void onDanmuMsg(MessageNoticeMsg messageNoticeMsg) {
                 log.info("收到弹幕{}:{}", messageNoticeMsg.getUsername(), messageNoticeMsg.getContent());
+            }
+        });
+
+        // 防止测试时直接退出
+        while (true) {
+            synchronized (lock) {
+                lock.wait();
+            }
+        }
+    }
+
+    @Test
+    void sendGiftTest() throws InterruptedException {
+        String cookie = System.getenv("cookie");
+        assertTrue(StrUtil.isNotBlank(cookie));
+        log.error("cookie: {}", cookie);
+
+        HuyaLiveChatClientConfig config = HuyaLiveChatClientConfig.builder()
+                .cookie(cookie)
+                .roomId(333003)
+                .build();
+
+        client = new HuyaLiveChatClient(config);
+        client.connect(() -> {
+            ThreadUtil.execAsync(() -> {
+                log.info("连接成功，5s后发送获取礼物请求");
+                ThreadUtil.sleep(5000);
+                while (HuyaApis.GIFT_ITEMS.isEmpty()) {
+                    log.debug("礼物列表为空，等待1s后重试");
+                    ThreadUtil.sleep(1000);
+                }
+                int giftId = 20114;
+                int giftCount = 1;
+                PropsItem propsItem = HuyaApis.GIFT_ITEMS.get(giftId);
+                log.info("发送礼物 {}({})x1(单价{} 总价{})", propsItem.getSPropsName(), propsItem.getIPropsId(), propsItem.getIPropsYb(), propsItem.getIPropsYb() * giftCount);
+                client.sendGift(giftId, giftCount, () -> log.debug("送礼物请求发送成功"), e -> log.error("送礼物请求发送失败", e));
+            });
+        });
+        client.addMsgListener(new IHuyaMsgListener() {
+            @Override
+            public void onMsg(IMsg msg) {
+                log.info("收到消息{}", msg);
+            }
+
+            @Override
+            public void onDanmuMsg(MessageNoticeMsg messageNoticeMsg) {
+                log.info("收到弹幕 {}:{}", messageNoticeMsg.getUsername(), messageNoticeMsg.getContent());
+            }
+
+            @Override
+            public void onGiftMsg(HuyaBinaryFrameHandler binaryFrameHandler, SendItemSubBroadcastPacketMsg msg) {
+                log.info("{} 收到礼物 {}({}) {} {}({})x{}({})", binaryFrameHandler.getRoomId(), msg.getUsername(), msg.getUid(), "赠送", msg.getGiftName(), msg.getGiftId(), msg.getGiftCount(), msg.getGiftPrice());
             }
         });
 
