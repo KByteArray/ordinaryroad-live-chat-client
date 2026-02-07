@@ -43,7 +43,7 @@ import tech.ordinaryroad.live.chat.client.servers.netty.client.config.BaseNettyC
 @SuperBuilder(toBuilder = true)
 public class HuyaLiveChatClientConfig extends BaseNettyClientConfig {
 
-    public static final String VER = "2309271152";
+    public static final String VER = "2601261517";
 
     @Builder.Default
 //    private String websocketUri = "wss://wsapi.huya.com:443";

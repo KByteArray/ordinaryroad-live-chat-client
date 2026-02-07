@@ -22,40 +22,43 @@
  * SOFTWARE.
  */
 
-package tech.ordinaryroad.live.chat.client.codec.huya.constant;
+package tech.ordinaryroad.live.chat.client.codec.huya.msg;
 
-import cn.hutool.core.util.StrUtil;
+import com.qq.tars.protocol.tars.TarsInputStream;
+import com.qq.tars.protocol.tars.TarsOutputStream;
+import com.qq.tars.protocol.tars.TarsStructBase;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 /**
  * @author mjz
- * @date 2023/10/3
+ * @date 2026/2/7
  */
 @Getter
-@RequiredArgsConstructor
-public enum HuyaWupFunctionEnum {
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class GetSequenceRsp extends TarsStructBase {
 
-    doLaunch,
-    speak,
-    getPropsList,
-    OnUserHeartBeat,
-    getLivingInfo,
-    sendMessage,
-    sendGift,
-    getSequence,
-    ;
+    private int iRetCode;
+    private String sSeq = "";
 
-    public static HuyaWupFunctionEnum getByName(String name) {
-        if (StrUtil.isBlank(name)) {
-            return null;
-        }
+    @Override
+    public void writeTo(TarsOutputStream os) {
+        os.write(this.iRetCode, 0);
+        os.write(this.sSeq, 1);
+    }
 
-        for (HuyaWupFunctionEnum value : values()) {
-            if (value.name().equals(name)) {
-                return value;
-            }
-        }
-        return null;
+    @Override
+    public void readFrom(TarsInputStream is) {
+        this.iRetCode = is.read(this.iRetCode, 0, false);
+        this.sSeq = is.read(this.sSeq, 1, false);
+    }
+
+    @Override
+    public TarsStructBase newInit() {
+        return this;
     }
 }

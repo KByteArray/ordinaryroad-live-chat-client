@@ -28,14 +28,17 @@ import cn.hutool.cache.impl.TimedCache;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.StrUtil;
+import tech.ordinaryroad.live.chat.client.codec.huya.api.HuyaApis;
 import tech.ordinaryroad.live.chat.client.codec.huya.constant.HuyaClientTemplateTypeEnum;
 import tech.ordinaryroad.live.chat.client.codec.huya.constant.HuyaLiveSource;
 import tech.ordinaryroad.live.chat.client.codec.huya.constant.HuyaOperationEnum;
 import tech.ordinaryroad.live.chat.client.codec.huya.constant.HuyaWupFunctionEnum;
 import tech.ordinaryroad.live.chat.client.codec.huya.msg.WebSocketCommand;
+import tech.ordinaryroad.live.chat.client.codec.huya.msg.dto.PropsItem;
 import tech.ordinaryroad.live.chat.client.codec.huya.msg.req.*;
 import tech.ordinaryroad.live.chat.client.codec.huya.room.HuyaRoomInitResult;
 import tech.ordinaryroad.live.chat.client.codec.huya.util.HuyaCodecUtil;
+import tech.ordinaryroad.live.chat.client.codec.huya.util.HuyaSecurityUtil;
 import tech.ordinaryroad.live.chat.client.commons.base.exception.BaseException;
 import tech.ordinaryroad.live.chat.client.commons.util.OrLiveChatCookieUtil;
 
@@ -48,16 +51,15 @@ import java.util.concurrent.TimeUnit;
  */
 public class HuyaMsgFactory {
 
-    private static final TimedCache<Object, HuyaMsgFactory> FACTORY_CACHE = new TimedCache<>(TimeUnit.DAYS.toMillis(1), new ConcurrentHashMap<>());
     public static final String KEY_COOKIE_GUID = "guid";
     public static final String KEY_COOKIE_YYUID = "yyuid";
-
+    private static final TimedCache<Object, HuyaMsgFactory> FACTORY_CACHE = new TimedCache<>(TimeUnit.DAYS.toMillis(1), new ConcurrentHashMap<>());
+    private volatile static byte[] heartbeatMsg;
+    private volatile static byte[] giftListReqMsg;
     /**
      * 浏览器地址中的房间id，支持短id
      */
     private final Object roomId;
-    private volatile static byte[] heartbeatMsg;
-    private volatile static byte[] giftListReqMsg;
 
     public HuyaMsgFactory(Object roomId) {
         this.roomId = roomId;
@@ -265,6 +267,66 @@ public class HuyaMsgFactory {
             }
         }
         return giftListReqMsg;
+    }
+
+    public WebSocketCommand createGetSequenceReq(String cookie) {
+        return createGetSequenceReq("0.0.1", cookie);
+    }
+
+    public WebSocketCommand createGetSequenceReq(String ver, String cookie) {
+        String yyuid = OrLiveChatCookieUtil.getCookieByName(cookie, KEY_COOKIE_YYUID, () -> {
+            throw new BaseException("Cookie中缺少字段" + KEY_COOKIE_YYUID);
+        });
+
+        GetSequenceReq getSequenceReq = new GetSequenceReq();
+        getSequenceReq.setSSgin(HuyaSecurityUtil.generateSSign(yyuid, 1, 1, false));
+
+        getSequenceReq.getTId().setLUid(NumberUtil.parseLong(yyuid));
+        getSequenceReq.getTId().setSHuYaUA("webh5&" + ver + "&huya");
+        getSequenceReq.getTId().setSCookie(cookie);
+
+        getSequenceReq.setISeqNum(1);
+        getSequenceReq.setIFromType(5);
+        getSequenceReq.setIBusinessType(1);
+
+        WebSocketCommand webSocketCommand = new WebSocketCommand();
+        webSocketCommand.setOperation(HuyaOperationEnum.EWSCmd_WupReq.getCode());
+        webSocketCommand.setVData(HuyaCodecUtil.encode("sequenceui", HuyaWupFunctionEnum.getSequence, getSequenceReq));
+        return webSocketCommand;
+    }
+
+    public WebSocketCommand createSendGiftReq(HuyaRoomInitResult roomInitResult, String payId, Integer giftId, Integer giftCount, String ver, String cookie) {
+        if (!HuyaApis.GIFT_ITEMS.containsKey(giftId)) {
+            throw new BaseException("缺少礼物ID为`" + giftId + "`的礼物信息");
+        }
+        PropsItem propsItem = HuyaApis.GIFT_ITEMS.get(giftId);
+        String guid = OrLiveChatCookieUtil.getCookieByName(cookie, KEY_COOKIE_GUID, () -> {
+            throw new BaseException("cookie中缺少参数" + KEY_COOKIE_GUID);
+        });
+        String yyuid = OrLiveChatCookieUtil.getCookieByName(cookie, KEY_COOKIE_YYUID, () -> {
+            throw new BaseException("cookie中缺少参数" + KEY_COOKIE_YYUID);
+        });
+        SendGiftReq sendGiftReq = new SendGiftReq();
+        sendGiftReq.getTId().setLUid(Long.parseLong(yyuid));
+        sendGiftReq.getTId().setSGuid(guid);
+        sendGiftReq.getTId().setSHuYaUA("webh5&" + ver + "&websocket");
+        sendGiftReq.getTId().setSCookie(cookie);
+        sendGiftReq.getTId().setSDeviceInfo("chrome");
+
+        sendGiftReq.setLGiftUid(roomInitResult.getLChannelId());
+        sendGiftReq.setLRoomUid(roomInitResult.getLChannelId());
+        sendGiftReq.setIItemType(giftId);
+        sendGiftReq.setIItemCount(giftCount);
+        sendGiftReq.setSPayId(payId);
+        sendGiftReq.setSSrcType("giftbar");
+
+        sendGiftReq.getTPayPloy().setIPayPloy(511);
+        sendGiftReq.getTPayPloy().setLPayCount((long) propsItem.getIPropsYb() * giftCount);
+
+        WebSocketCommand webSocketCommand = new WebSocketCommand();
+        webSocketCommand.setOperation(HuyaOperationEnum.EWSCmd_WupReq.getCode());
+        webSocketCommand.setVData(HuyaCodecUtil.encode("wupui", HuyaWupFunctionEnum.sendGift, sendGiftReq));
+        return webSocketCommand;
     }
 
 }
