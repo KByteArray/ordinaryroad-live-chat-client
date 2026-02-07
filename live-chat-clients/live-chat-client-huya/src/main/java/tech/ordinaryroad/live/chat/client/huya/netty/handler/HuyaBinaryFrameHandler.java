@@ -46,6 +46,7 @@ import tech.ordinaryroad.live.chat.client.huya.listener.IHuyaMsgListener;
 import tech.ordinaryroad.live.chat.client.servers.netty.client.handler.BaseNettyClientBinaryFrameHandler;
 
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 
 /**
@@ -133,10 +134,10 @@ public class HuyaBinaryFrameHandler extends BaseNettyClientBinaryFrameHandler<Hu
                     break;
                 }
                 case getSequence: {
-                    HuyaLiveChatClient.PendingSendGift pending = client.getAndClearPendingSendGift();
-                    if (pending == null) {
+                    CompletableFuture<String> payIdFuture = client.getAndClearPendingPayIdFuture();
+                    if (payIdFuture == null) {
                         if (log.isDebugEnabled()) {
-                            log.debug("getSequence 响应收到，但无待发送礼物上下文，忽略");
+                            log.debug("getSequence 响应收到，但无待完成的 payId Future，忽略");
                         }
                         break;
                     }
@@ -151,18 +152,7 @@ public class HuyaBinaryFrameHandler extends BaseNettyClientBinaryFrameHandler<Hu
                         sSeq = HuyaSecurityUtil.generateLocalSequence();
                         log.warn("礼物payId获取失败,使用本地生成的序: {}", sSeq);
                     }
-                    WebSocketCommand webSocketCommand = HuyaMsgFactory.getInstance(client.getConfig().getRoomId()).createSendGiftReq(client.getRoomInitResult(), sSeq, pending.getGiftId(), pending.getGiftCount(), client.getConfig().getVer(), client.getConfig().getCookie());
-                    client.send(webSocketCommand, () -> {
-                        log.debug("送礼物请求发送成功，payId: {}, giftId: {}, giftCount: {}", sSeq, pending.getGiftId(), pending.getGiftCount());
-                        if (pending.getSuccess() != null) {
-                            pending.getSuccess().run();
-                        }
-                    }, (e) -> {
-                        log.error("送礼物请求发送失败，payId: {}, giftId: {}, giftCount: {}, error: {}", sSeq, pending.getGiftId(), pending.getGiftCount(), e.getMessage());
-                        if (pending.getFailed() != null) {
-                            pending.getFailed().accept(e);
-                        }
-                    });
+                    payIdFuture.complete(sSeq);
                     break;
                 }
                 default: {

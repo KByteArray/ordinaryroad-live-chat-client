@@ -31,8 +31,6 @@ import io.netty.handler.codec.http.DefaultHttpHeaders;
 import io.netty.handler.codec.http.websocketx.WebSocketClientProtocolConfig;
 import io.netty.handler.codec.http.websocketx.WebSocketClientProtocolHandler;
 import io.netty.handler.codec.http.websocketx.WebSocketVersion;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import tech.ordinaryroad.live.chat.client.codec.huya.api.HuyaApis;
 import tech.ordinaryroad.live.chat.client.codec.huya.constant.HuyaCmdEnum;
@@ -51,6 +49,7 @@ import tech.ordinaryroad.live.chat.client.plugin.forward.ForwardMsgPlugin;
 import tech.ordinaryroad.live.chat.client.servers.netty.client.base.BaseNettyClient;
 
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.Consumer;
 
@@ -71,9 +70,9 @@ public class HuyaLiveChatClient extends BaseNettyClient<
         HuyaBinaryFrameHandler> {
 
     /**
-     * 待发送礼物事务上下文（getSequence 请求发出后，在 getSequence 响应中携带，用于发送 createSendGiftReq）
+     * 待完成的 payId Future（getSequence 响应到达时完成）
      */
-    private final AtomicReference<PendingSendGift> pendingSendGift = new AtomicReference<>();
+    private final AtomicReference<CompletableFuture<String>> pendingPayIdFuture = new AtomicReference<>();
 
     public HuyaLiveChatClient(HuyaLiveChatClientConfig config, List<IHuyaMsgListener> msgListeners, IHuyaConnectionListener connectionListener, EventLoopGroup workerGroup) {
         super(config, workerGroup, connectionListener, IHuyaMsgListener.class);
@@ -104,10 +103,32 @@ public class HuyaLiveChatClient extends BaseNettyClient<
     }
 
     /**
-     * 获取并清除待发送礼物上下文，供 getSequence 响应处理时使用
+     * 获取 payId（sSeq），通过 getSequence 请求，响应到达时 Future 完成
+     *
+     * @return 收到 getSequence 响应时以 sSeq 完成；请求发送失败时 exceptionally 完成
      */
-    public PendingSendGift getAndClearPendingSendGift() {
-        return pendingSendGift.getAndSet(null);
+    public CompletableFuture<String> getPayId() {
+        CompletableFuture<String> future = new CompletableFuture<>();
+        pendingPayIdFuture.set(future);
+        WebSocketCommand getSequenceReq = HuyaMsgFactory.getInstance(getConfig().getRoomId())
+                .createGetSequenceReq(getConfig().getVer(), getConfig().getCookie());
+        send(getSequenceReq, () -> {
+            if (log.isDebugEnabled()) {
+                log.debug("getSequence 请求已发送，等待 payId");
+            }
+        }, (e) -> {
+            pendingPayIdFuture.set(null);
+            log.error("getSequence 请求发送失败, error: {}", e.getMessage());
+            future.completeExceptionally(e);
+        });
+        return future;
+    }
+
+    /**
+     * 获取并清除待完成的 payId Future，供 getSequence 响应处理时使用
+     */
+    public CompletableFuture<String> getAndClearPendingPayIdFuture() {
+        return pendingPayIdFuture.getAndSet(null);
     }
 
     @Override
@@ -190,7 +211,7 @@ public class HuyaLiveChatClient extends BaseNettyClient<
     }
 
     /**
-     * 发送礼物（事务：先 getSequence 获取 payId，再 createSendGiftReq 发送礼物）
+     * 发送礼物（事务：先通过 getPayId() Future 获取 payId，再 createSendGiftReq 发送礼物）
      *
      * @param giftId    礼物 ID
      * @param giftCount 礼物个数
@@ -200,39 +221,38 @@ public class HuyaLiveChatClient extends BaseNettyClient<
     }
 
     /**
-     * 发送礼物（事务：先 getSequence 获取 payId，再 createSendGiftReq 发送礼物）
+     * 发送礼物（事务：先 getPayId 获取 payId，再 createSendGiftReq 发送礼物），带回调
      *
      * @param giftId    礼物 ID
      * @param giftCount 礼物个数
      * @param success   发送成功回调（在 createSendGiftReq 发送成功时调用）
-     * @param failed    发送失败回调（getSequence 请求发送失败或 createSendGiftReq 发送失败时调用）
+     * @param failed    发送失败回调（getPayId 或 createSendGiftReq 失败时调用）
      */
     public void sendGift(int giftId, int giftCount, Runnable success, Consumer<Throwable> failed) {
-        pendingSendGift.set(new PendingSendGift(giftId, giftCount, success, failed));
-        WebSocketCommand getSequenceReq = HuyaMsgFactory.getInstance(getConfig().getRoomId())
-                .createGetSequenceReq(getConfig().getVer(), getConfig().getCookie());
-        send(getSequenceReq, () -> {
-            if (log.isDebugEnabled()) {
-                log.debug("getSequence 请求已发送，待 getSequence 响应后发送礼物 giftId: {}, giftCount: {}", giftId, giftCount);
-            }
-        }, (e) -> {
-            pendingSendGift.set(null);
-            log.error("getSequence 请求发送失败，送礼物事务终止, giftId: {}, giftCount: {}, error: {}", giftId, giftCount, e.getMessage());
-            if (failed != null) {
-                failed.accept(e);
-            }
-        });
+        getPayId()
+                .thenAccept(sSeq -> {
+                    WebSocketCommand webSocketCommand = HuyaMsgFactory.getInstance(getConfig().getRoomId()).createSendGiftReq(
+                            getRoomInitResult(), sSeq, giftId, giftCount, getConfig().getVer(), getConfig().getCookie());
+                    send(webSocketCommand, () -> {
+                        if (log.isDebugEnabled()) {
+                            log.debug("送礼物请求发送成功，payId: {}, giftId: {}, giftCount: {}", sSeq, giftId, giftCount);
+                        }
+                        if (success != null) {
+                            success.run();
+                        }
+                    }, (e) -> {
+                        log.error("送礼物请求发送失败，payId: {}, giftId: {}, giftCount: {}, error: {}", sSeq, giftId, giftCount, e.getMessage());
+                        if (failed != null) {
+                            failed.accept(e);
+                        }
+                    });
+                })
+                .exceptionally(e -> {
+                    if (failed != null) {
+                        failed.accept(e);
+                    }
+                    return null;
+                });
     }
 
-    /**
-     * 待发送礼物上下文
-     */
-    @Getter
-    @AllArgsConstructor
-    public static class PendingSendGift {
-        private final int giftId;
-        private final int giftCount;
-        private final Runnable success;
-        private final Consumer<Throwable> failed;
-    }
 }
