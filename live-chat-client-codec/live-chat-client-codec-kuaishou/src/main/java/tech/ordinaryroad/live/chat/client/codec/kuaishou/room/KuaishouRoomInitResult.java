@@ -30,8 +30,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import tech.ordinaryroad.live.chat.client.codec.kuaishou.api.KuaishouApis;
 import tech.ordinaryroad.live.chat.client.codec.kuaishou.constant.KuaishouQualityEnum;
+import tech.ordinaryroad.live.chat.client.codec.kuaishou.resp.KuaishouUserInfoResponse;
 import tech.ordinaryroad.live.chat.client.commons.base.constant.RoomLiveStatusEnum;
 import tech.ordinaryroad.live.chat.client.commons.base.constant.RoomLiveStreamQualityEnum;
 import tech.ordinaryroad.live.chat.client.commons.base.room.IRoomInitResult;
@@ -52,7 +52,7 @@ public class KuaishouRoomInitResult implements IRoomInitResult {
     private String liveStreamId;
     private List<String> websocketUrls;
     private JsonNode livedetailJsonNode;
-    private KuaishouApis.KuaishouUserInfoResponse kuaishouUserInfo;
+    private KuaishouUserInfoResponse kuaishouUserInfo;
 
     @Override
     public String getRoomTitle() {

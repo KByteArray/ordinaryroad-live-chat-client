@@ -1,0 +1,44 @@
+{
+  "ownerInfo" : {
+    "id" : "3xxshf48ngmqau2",
+    "name" : "今生，66",
+    "description" : "",
+    "avatar" : "https://p2-pro.a.yximgs.com/uhead/AB/2016/09/04/13/BMjAxNjA5MDQxMzUxMjNfMzI3MjI4MDMyXzFfaGQzNQ==.jpg",
+    "sex" : "M",
+    "constellation" : "",
+    "cityName" : "",
+    "originUserId" : 327228032,
+    "privacy" : false,
+    "isNew" : false,
+    "timestamp" : 1775402788090,
+    "verifiedStatus" : {
+      "verified" : false,
+      "description" : "",
+      "type" : 0,
+      "new" : false,
+      "iconUrl" : ""
+    },
+    "bannedStatus" : {
+      "banned" : false,
+      "socialBanned" : false,
+      "isolate" : false,
+      "defriend" : false
+    },
+    "counts" : {
+      "fan" : "1",
+      "follow" : "2",
+      "photo" : 0,
+      "playback" : 0,
+      "liked" : 0,
+      "private" : 0,
+      "review" : 0,
+      "open" : 0
+    },
+    "isAdult" : true
+  },
+  "kshellBalance" : {
+    "result" : 1,
+    "kshell" : 0,
+    "host-name" : "public-bjzey-c56-kce-node373.idchb1az3.hb1.kwaidc.com"
+  }
+}

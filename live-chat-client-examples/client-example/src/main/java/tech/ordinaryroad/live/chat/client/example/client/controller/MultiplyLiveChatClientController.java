@@ -24,11 +24,8 @@
 
 package tech.ordinaryroad.live.chat.client.example.client.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 import tech.ordinaryroad.live.chat.client.bilibili.client.BilibiliLiveChatClient;
 import tech.ordinaryroad.live.chat.client.bilibili.config.BilibiliLiveChatClientConfig;
 import tech.ordinaryroad.live.chat.client.bilibili.listener.IBilibiliConnectionListener;
@@ -58,25 +55,24 @@ import tech.ordinaryroad.live.chat.client.servers.netty.client.base.BaseNettyCli
 @RequestMapping("client/multiply")
 public class MultiplyLiveChatClientController {
 
-    private final IBilibiliMsgListener bilibiliMsgListener;
-    private final IBilibiliConnectionListener bilibiliConnectionListener;
-    private final IDouyuMsgListener douyuMsgListener;
-    private final IDouyuConnectionListener douyuConnectionListener;
-    private final IKuaishouMsgListener kuaishouMsgListener;
-    private final IKuaishouConnectionListener kuaishouConnectionListener;
-    private final IDouyinMsgListener douyinMsgListener;
-    private final IDouyinConnectionListener douyinConnectionListener;
+    @Autowired
+    IBilibiliMsgListener bilibiliMsgListener;
+    @Autowired
+    IBilibiliConnectionListener bilibiliConnectionListener;
+    @Autowired
+    IDouyuMsgListener douyuMsgListener;
+    @Autowired
+    IDouyuConnectionListener douyuConnectionListener;
+    @Autowired
+    IKuaishouMsgListener kuaishouMsgListener;
+    @Autowired
+    IKuaishouConnectionListener kuaishouConnectionListener;
+    @Autowired
+    IDouyinMsgListener douyinMsgListener;
+    @Autowired
+    IDouyinConnectionListener douyinConnectionListener;
 
-    public MultiplyLiveChatClientController(IBilibiliMsgListener bilibiliMsgListener, IBilibiliConnectionListener bilibiliConnectionListener, IDouyuMsgListener douyuMsgListener, IDouyuConnectionListener douyuConnectionListener, IKuaishouMsgListener kuaishouMsgListener, IKuaishouConnectionListener kuaishouConnectionListener, IDouyinMsgListener douyinMsgListener, IDouyinConnectionListener douyinConnectionListener) {
-        this.bilibiliMsgListener = bilibiliMsgListener;
-        this.bilibiliConnectionListener = bilibiliConnectionListener;
-        this.douyuMsgListener = douyuMsgListener;
-        this.douyuConnectionListener = douyuConnectionListener;
-        this.kuaishouMsgListener = kuaishouMsgListener;
-        this.kuaishouConnectionListener = kuaishouConnectionListener;
-        this.douyinMsgListener = douyinMsgListener;
-        this.douyinConnectionListener = douyinConnectionListener;
-    }
+
 
 
     @GetMapping("newClientAndStart/{roomId}")

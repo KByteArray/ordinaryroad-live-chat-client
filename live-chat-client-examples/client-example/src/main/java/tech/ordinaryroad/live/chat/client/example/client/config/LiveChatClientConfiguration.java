@@ -24,6 +24,8 @@
 
 package tech.ordinaryroad.live.chat.client.example.client.config;
 
+import jakarta.annotation.PostConstruct;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
@@ -34,14 +36,19 @@ import tech.ordinaryroad.live.chat.client.douyin.client.DouyinLiveChatClient;
 import tech.ordinaryroad.live.chat.client.douyu.client.DouyuLiveChatClient;
 import tech.ordinaryroad.live.chat.client.douyu.listener.IDouyuConnectionListener;
 import tech.ordinaryroad.live.chat.client.douyu.listener.IDouyuMsgListener;
+import tech.ordinaryroad.live.chat.client.example.client.service.ConfigPersistenceService;
 import tech.ordinaryroad.live.chat.client.kuaishou.client.KuaishouLiveChatClient;
 import tech.ordinaryroad.live.chat.client.kuaishou.listener.IKuaishouConnectionListener;
 import tech.ordinaryroad.live.chat.client.kuaishou.listener.IKuaishouMsgListener;
 
 /**
+ * 直播客户端配置类
+ * 支持从数据库动态加载配置
+ *
  * @author mjz
  * @date 2023/8/21
  */
+@Slf4j
 @Component
 public class LiveChatClientConfiguration {
 
@@ -55,12 +62,26 @@ public class LiveChatClientConfiguration {
     IDouyuMsgListener douyuCmdMsgListener;
     @Autowired
     IDouyuConnectionListener douyuConnectionListener;
-
     @Autowired
     IKuaishouMsgListener kuaishouMsgListener;
     @Autowired
     IKuaishouConnectionListener kuaishouConnectionListener;
+    @Autowired
+    DouyinMsgListener douyinMsgListener;
+    @Autowired
+    DouyinConnectionListener douyinConnectionListener;
+    @Autowired
+    ConfigPersistenceService configPersistenceService;
 
+    /**
+     * 应用启动时初始化默认配置
+     */
+    @PostConstruct
+    public void init() {
+        log.info("初始化直播平台默认配置...");
+        configPersistenceService.initializeDefaultConfigs();
+        log.info("默认配置初始化完成");
+    }
 
     @Bean
     public BilibiliLiveChatClient bilibiliLiveChatClient() {
@@ -78,7 +99,7 @@ public class LiveChatClientConfiguration {
     }
 
     @Bean
-    public DouyinLiveChatClient douyinLiveChatClient(DouyinMsgListener douyinMsgListener, DouyinConnectionListener douyinConnectionListener) {
+    public DouyinLiveChatClient douyinLiveChatClient() {
         return new DouyinLiveChatClient(configurations.getDouyin(), douyinMsgListener, douyinConnectionListener);
     }
 

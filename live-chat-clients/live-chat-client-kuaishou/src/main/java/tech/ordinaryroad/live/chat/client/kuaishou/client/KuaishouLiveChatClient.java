@@ -145,7 +145,8 @@ public class KuaishouLiveChatClient extends BaseNettyClient<
 //            }
 //        }
 //        return kuaishouRoomInitResult;
-        return KuaishouApis.roomInit(getConfig().getRoomId(), getConfig().getRoomInfoGetType(), getConfig().getCookie(), getConfig().getKww(), roomInitResult);
+        KuaishouLiveChatClientConfig config = getConfig();
+        return KuaishouApis.roomInit(config.getRoomId(), config.getRoomInfoGetType(), config.getCookie(), config.getKww(), roomInitResult);
     }
 
     @Override
@@ -156,14 +157,14 @@ public class KuaishouLiveChatClient extends BaseNettyClient<
         if (danmu instanceof String) {
             String msg = (String) danmu;
             try {
+                KuaishouLiveChatClientConfig config = getConfig();
                 if (log.isDebugEnabled()) {
-                    log.debug("{} kuaishou发送弹幕 {}", getConfig().getRoomId(), danmu);
+                    log.debug("{} kuaishou发送弹幕 {}", config.getRoomId(), danmu);
                 }
-
                 boolean sendSuccess = false;
                 try {
-                    KuaishouApis.sendComment(getConfig().getCookie(), getConfig().getKww(),
-                            getConfig().getRoomId(),
+                    KuaishouApis.sendComment(config.getCookie(), config.getKww(),
+                            config.getRoomId(),
                             KuaishouApis.SendCommentRequest.builder()
                                     .liveStreamId(roomInitResult.getLiveStreamId())
                                     .content(msg)

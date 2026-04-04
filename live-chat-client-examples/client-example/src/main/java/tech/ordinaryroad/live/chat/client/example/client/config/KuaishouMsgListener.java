@@ -77,7 +77,7 @@
          log.debug("直播间状态 {}", roomLiveStatus);
          tech.ordinaryroad.live.chat.client.codec.kuaishou.protobuf.SimpleUserInfoOuterClass.SimpleUserInfo user = msg.getMsg().getUser();
          String displayId = user.getPrincipalId();
-         log.info("{}到弹幕消息 用户：{} 快手号：{}", binaryFrameHandler.getRoomId(), msg.getUsername(), displayId);
+         log.info("{}:到弹幕消息 用户：{} 快手号：{},内容:{}", binaryFrameHandler.getRoomId(), msg.getUsername(), displayId, content);
      }
 
      /**

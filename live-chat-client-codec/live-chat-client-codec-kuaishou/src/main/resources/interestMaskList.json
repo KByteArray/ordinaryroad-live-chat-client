@@ -1,0 +1,1837 @@
+[ {
+  "id" : 1,
+  "name" : "电竞",
+  "categoryType" : 0,
+  "authorList" : [ {
+    "fanCount" : "481",
+    "principalId" : "3xcfam7669xus8y",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3xcfam7669xus8y",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2020/09/17/12/BMjAyMDA5MTcxMjMwNDFfMjA3NDc1MzczM18xX2hkMTIyXzU2MQ==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2020/09/17/12/BMjAyMDA5MTcxMjMwNDFfMjA3NDc1MzczM18xX2hkMTIyXzU2MQ==_s.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "wcg_wc3",
+    "user_text" : "WCG2020 CONNECTED《魔兽争霸3:重制版》项目官方账号 / BEYOND THE GAME, MORE THAN SPORTS!",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2020/09/17/12/BMjAyMDA5MTcxMjMwNDFfMjA3NDc1MzczM18xX2hkMTIyXzU2MQ==_s.jpg",
+    "user_sex" : "M",
+    "user_id" : 2074753733,
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "VALORANT_ESPORTS",
+    "fanCount" : "11万",
+    "principalId" : "VALORANT_ESPORTS",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3xhgd5x37zjdkhi",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/10/25/13/BMjAyNTEwMjUxMzM2NDBfMjQ0NTAzOTY4OV8xX2hkODA2XzY4NA==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2025/10/25/13/BMjAyNTEwMjUxMzM2NDBfMjQ0NTAzOTY4OV8xX2hkODA2XzY4NA==_s.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "无畏契约电竞",
+    "user_text" : "关注无畏契约电竞，第一时间为您带来无畏契约赛事精彩内容！",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/10/25/13/BMjAyNTEwMjUxMzM2NDBfMjQ0NTAzOTY4OV8xX2hkODA2XzY4NA==_s.jpg",
+    "user_sex" : "U",
+    "user_id" : 2445039689,
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "lolm1314666",
+    "fanCount" : "342.5万",
+    "principalId" : "lolm1314666",
+    "live" : false,
+    "following" : false,
+    "verified" : true,
+    "verifiedDetail" : {
+      "description" : "英雄联盟手游官方账号",
+      "iconType" : 2,
+      "viceVerifiedType" : 0,
+      "newVerified" : true,
+      "musicCompany" : false,
+      "type" : 10
+    },
+    "eid" : "3xqgptby4bqvvv9",
+    "headurls" : [ {
+      "cdn" : "p4-pro.a.yximgs.com",
+      "url" : "https://p4-pro.a.yximgs.com/uhead/AB/2026/04/01/11/BMjAyNjA0MDExMTI2NTBfMTQzODEwODIzN18yX2hkMzQxXzQ0_s.jpg"
+    }, {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/04/01/11/BMjAyNjA0MDExMTI2NTBfMTQzODEwODIzN18yX2hkMzQxXzQ0_s.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "英雄联盟手游",
+    "user_text" : "竞速新版本来袭！奎桑提、塔莉垭、斯卡纳陆续上线，S21新赛季开启，符文系统史诗重塑，多米尼克领主回归，赛车主题符文大乱斗常驻，艾欧尼亚清爽夏日开启。",
+    "headurl" : "https://p4-pro.a.yximgs.com/uhead/AB/2026/04/01/11/BMjAyNjA0MDExMTI2NTBfMTQzODEwODIzN18yX2hkMzQxXzQ0_s.jpg",
+    "user_sex" : "F",
+    "user_id" : 1438108237,
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "FFM_180524",
+    "fanCount" : "12.3万",
+    "principalId" : "FFM_180524",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3xhee3iepcf9w2u",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/12/12/14/BMjAyNDEyMTIxNDMyNDdfMTYzNDQ1MDkwNF8xX2hkOTQ3Xzk3MQ==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2024/12/12/14/BMjAyNDEyMTIxNDMyNDdfMTYzNDQ1MDkwNF8xX2hkOTQ3Xzk3MQ==_s.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "FC足球世界手游",
+    "user_text" : "FC足球世界手游快手官方账号\n欢迎各位大神积极投稿\n被采纳的视频素材可获得的神秘游戏礼包哦~",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/12/12/14/BMjAyNDEyMTIxNDMyNDdfMTYzNDQ1MDkwNF8xX2hkOTQ3Xzk3MQ==_s.jpg",
+    "user_sex" : "M",
+    "user_id" : 1634450904,
+    "isFavorited" : false
+  }, {
+    "fanCount" : "17.6万",
+    "principalId" : "3xmjuudywvjyufy",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3xmjuudywvjyufy",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2023/02/09/14/BMjAyMzAyMDkxNDEwMjFfMjIwMjA1MzY4OF8yX2hkNTQ2XzgyMw==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2023/02/09/14/BMjAyMzAyMDkxNDEwMjFfMjIwMjA1MzY4OF8yX2hkNTQ2XzgyMw==_s.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "5EPlay CSGO",
+    "user_text" : "5Eplay账号。",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2023/02/09/14/BMjAyMzAyMDkxNDEwMjFfMjIwMjA1MzY4OF8yX2hkNTQ2XzgyMw==_s.jpg",
+    "user_sex" : "U",
+    "user_id" : 2202053688,
+    "isFavorited" : false
+  }, {
+    "fanCount" : "451.8万",
+    "principalId" : "3xbxicqnd7dhp8s",
+    "live" : false,
+    "following" : false,
+    "verified" : true,
+    "verifiedDetail" : {
+      "description" : "心动网络股份有限公司",
+      "iconType" : 2,
+      "viceVerifiedType" : 0,
+      "newVerified" : true,
+      "musicCompany" : false,
+      "type" : 10
+    },
+    "eid" : "3xbxicqnd7dhp8s",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/02/03/19/BMjAyNjAyMDMxOTA1NTZfMTMxOTUwODEwMl8yX2hkOTQ4XzU3MQ==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2026/02/03/19/BMjAyNjAyMDMxOTA1NTZfMTMxOTUwODEwMl8yX2hkOTQ4XzU3MQ==_s.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "香肠派对",
+    "user_text" : "SS24赛季「龙宫~摸大鱼」震撼上线！\n全新关卡、绝世武器、古怪道具！\n还有多个IP联动重磅登场！\n春节福利满满送不停，肠肠这年味！",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/02/03/19/BMjAyNjAyMDMxOTA1NTZfMTMxOTUwODEwMl8yX2hkOTQ4XzU3MQ==_s.jpg",
+    "user_sex" : "F",
+    "user_id" : 1319508102,
+    "isFavorited" : false
+  }, {
+    "fanCount" : "4.7万",
+    "principalId" : "3xwjwuiee7pihz2",
+    "live" : false,
+    "following" : false,
+    "verified" : true,
+    "verifiedDetail" : {
+      "description" : "快手平台认证账号",
+      "iconType" : 2,
+      "viceVerifiedType" : 0,
+      "newVerified" : true,
+      "musicCompany" : false,
+      "type" : 9
+    },
+    "eid" : "3xwjwuiee7pihz2",
+    "headurls" : [ {
+      "cdn" : "p4-pro.a.yximgs.com",
+      "url" : "https://p4-pro.a.yximgs.com/uhead/AB/2023/04/03/15/BMjAyMzA0MDMxNTA4MTdfMTgxNTA2MDIwMV8yX2hkMTA4XzE2Ng==_s.jpg"
+    }, {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2023/04/03/15/BMjAyMzA0MDMxNTA4MTdfMTgxNTA2MDIwMV8yX2hkMTA4XzE2Ng==_s.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "快手云顶铲铲君",
+    "user_text" : "致力于金铲铲之战游戏精彩视频产出\n关注我获得更多游戏资讯✨",
+    "headurl" : "https://p4-pro.a.yximgs.com/uhead/AB/2023/04/03/15/BMjAyMzA0MDMxNTA4MTdfMTgxNTA2MDIwMV8yX2hkMTA4XzE2Ng==_s.jpg",
+    "user_sex" : "M",
+    "user_id" : 1815060201,
+    "isFavorited" : false
+  }, {
+    "fanCount" : "456.5万",
+    "principalId" : "3x4i7dudbfsnxmi",
+    "live" : true,
+    "following" : false,
+    "verified" : true,
+    "verifiedDetail" : {
+      "description" : "《第五人格》官方账号",
+      "iconType" : 2,
+      "viceVerifiedType" : 0,
+      "newVerified" : true,
+      "musicCompany" : false,
+      "type" : 10
+    },
+    "eid" : "3x4i7dudbfsnxmi",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/04/02/11/BMjAyNjA0MDIxMTU1MDlfOTE3MjQ3OTg3XzJfaGQ4NzdfNDEx_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2026/04/02/11/BMjAyNjA0MDIxMTU1MDlfOTE3MjQ3OTg3XzJfaGQ4NzdfNDEx_s.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "网易第五人格",
+    "user_text" : "分享庄园趣事",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/04/02/11/BMjAyNjA0MDIxMTU1MDlfOTE3MjQ3OTg3XzJfaGQ4NzdfNDEx_s.jpg",
+    "user_sex" : "M",
+    "user_id" : 917247987,
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "bssupercell",
+    "fanCount" : "123.2万",
+    "principalId" : "bssupercell",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3xibczd64c6m3h9",
+    "headurls" : [ {
+      "cdn" : "p4-pro.a.yximgs.com",
+      "url" : "https://p4-pro.a.yximgs.com/uhead/AB/2022/12/07/20/BMjAyMjEyMDcyMDIyNTJfMTI1MDUwNjM1Ml8yX2hkOTE4XzM2MQ==_s.jpg"
+    }, {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2022/12/07/20/BMjAyMjEyMDcyMDIyNTJfMTI1MDUwNjM1Ml8yX2hkOTE4XzM2MQ==_s.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "荒野乱斗",
+    "user_text" : "你终于发现我啦！(*/ω＼*) 这是一个欧气满满的账号，快来吸欧气吧！(｀・ω・´) \n【集结号令】\n现所有斗士都只能通过微信或者QQ登录！其他登录方式请下载【荒野乱斗账号绑定工具】进行绑定！成功即可领取集结好礼！\n【有奖征稿】\n优秀作品、精彩素材请投稿至 914969567@qq.com 与大家一起分享你的精彩时刻 一经采用，还会从雅琪小姐姐的电钻修理费中抠出一部分作为奖励发放哦~\n【官方社群】\n欢迎加入荒野乱斗官方社群，进群可参与官方创作活动，宝石金币、英雄皮肤等你来领！群号：606835307",
+    "headurl" : "https://p4-pro.a.yximgs.com/uhead/AB/2022/12/07/20/BMjAyMjEyMDcyMDIyNTJfMTI1MDUwNjM1Ml8yX2hkOTE4XzM2MQ==_s.jpg",
+    "user_sex" : "F",
+    "user_id" : 1250506352,
+    "isFavorited" : false
+  }, {
+    "fanCount" : "129",
+    "principalId" : "3xuv8b4uj6cmez2",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3xuv8b4uj6cmez2",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2021/05/19/18/BMjAyMTA1MTkxODE5MjlfMTkxNzcyNzE3NF8xX2hkNDZfMzcy_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2021/05/19/18/BMjAyMTA1MTkxODE5MjlfMTkxNzcyNzE3NF8xX2hkNDZfMzcy_s.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "高校电竞联盟挑战赛",
+    "user_text" : "WUCL高校电竞联盟挑战赛是国内顶级综合类校园电竞赛事，集合腾讯优质游戏IP:英雄联盟、王者荣耀、和平精英。青春就要赛一场！在电竞舞台上在热血一次吧！",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2021/05/19/18/BMjAyMTA1MTkxODE5MjlfMTkxNzcyNzE3NF8xX2hkNDZfMzcy_s.jpg",
+    "user_sex" : "M",
+    "user_id" : 1917727174,
+    "isFavorited" : false
+  } ]
+}, {
+  "id" : 2,
+  "name" : "游戏",
+  "categoryType" : 0,
+  "authorList" : [ {
+    "fanCount" : "10.6万",
+    "principalId" : "3xeqbnptzbz633g",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3xeqbnptzbz633g",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2023/11/20/07/BMjAyMzExMjAwNzIxNDdfMzAzNjczOTcwXzJfaGQyOTdfNjE2_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2023/11/20/07/BMjAyMzExMjAwNzIxNDdfMzAzNjczOTcwXzJfaGQyOTdfNjE2_s.jpg"
+    } ],
+    "user_name" : "马小跳生活记",
+    "user_id" : 303673970,
+    "user_text" : "谢谢大家的支持",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2023/11/20/07/BMjAyMzExMjAwNzIxNDdfMzAzNjczOTcwXzJfaGQyOTdfNjE2_s.jpg",
+    "user_sex" : "M",
+    "isFavorited" : false
+  }, {
+    "fanCount" : "43万",
+    "principalId" : "3xdxmsmsmy37aeu",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3xdxmsmsmy37aeu",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2023/10/27/17/BMjAyMzEwMjcxNzUxMDVfMzY5MDUyMDg4M18xX2hkMzMyXzc3NA==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2023/10/27/17/BMjAyMzEwMjcxNzUxMDVfMzY5MDUyMDg4M18xX2hkMzMyXzc3NA==_s.jpg"
+    } ],
+    "user_name" : "小浩川子",
+    "user_id" : 3690520883,
+    "user_text" : "",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2023/10/27/17/BMjAyMzEwMjcxNzUxMDVfMzY5MDUyMDg4M18xX2hkMzMyXzc3NA==_s.jpg",
+    "user_sex" : "M",
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "Mopeimiao888888",
+    "fanCount" : "46.4万",
+    "principalId" : "Mopeimiao888888",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3x23yapji29g47g",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p4-pro.a.yximgs.com",
+      "url" : "https://p4-pro.a.yximgs.com/uhead/AB/2025/04/20/12/BMjAyNTA0MjAxMjUyMzJfNjA4MDYzNjIzXzFfaGQ4NzBfOTM0_s.jpg"
+    }, {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/04/20/12/BMjAyNTA0MjAxMjUyMzJfNjA4MDYzNjIzXzFfaGQ4NzBfOTM0_s.jpg"
+    } ],
+    "user_name" : "锅仔",
+    "user_id" : 608063623,
+    "user_text" : "全网首个博尔特300亿大亨\n\n合作   gz16295732\n\n做好每一个视频希望大家开心\n\n感谢大家的一路陪伴与支持",
+    "headurl" : "https://p4-pro.a.yximgs.com/uhead/AB/2025/04/20/12/BMjAyNTA0MjAxMjUyMzJfNjA4MDYzNjIzXzFfaGQ4NzBfOTM0_s.jpg",
+    "user_sex" : "M",
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "sanlang6661",
+    "fanCount" : "195.8万",
+    "principalId" : "sanlang6661",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3x5j8weu4q3vnhe",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2021/09/25/14/BMjAyMTA5MjUxNDI4MDBfODYxMDEzNjk3XzJfaGQyMDlfMTM0_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2021/09/25/14/BMjAyMTA5MjUxNDI4MDBfODYxMDEzNjk3XzJfaGQyMDlfMTM0_s.jpg"
+    } ],
+    "user_name" : "三狼 和平精英",
+    "user_id" : 861013697,
+    "user_text" : "每天晚上8.00点直播间不见不散！\n\n 全网第一细主播，我说第二没人敢说第一！\n 商务：CJH867014680（备注）\n\n  我相信时间会证明自己的一切努力",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2021/09/25/14/BMjAyMTA5MjUxNDI4MDBfODYxMDEzNjk3XzJfaGQyMDlfMTM0_s.jpg",
+    "user_sex" : "M",
+    "isFavorited" : false
+  }, {
+    "fanCount" : "92.7万",
+    "principalId" : "3xpkhnsu5n25qia",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3xpkhnsu5n25qia",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/07/14/01/BMjAyNDA3MTQwMTE3MDRfNDIyNjMxNTE5MV8xX2hkNzQ4XzY4MA==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2024/07/14/01/BMjAyNDA3MTQwMTE3MDRfNDIyNjMxNTE5MV8xX2hkNzQ4XzY4MA==_s.jpg"
+    } ],
+    "user_name" : "小琪（胖琪时代）",
+    "user_id" : 4226315191,
+    "user_text" : "商务合作：cr2650481726（记得备注不然不同意）\n爱玩：蛋仔   吃鸡   王者\n已经和小胖在一起啦\n这是唯一一个号，其他都是冒充的 宝宝们不要被骗咯\n马甲：（琪饭🍚）\n收剪辑粉",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/07/14/01/BMjAyNDA3MTQwMTE3MDRfNDIyNjMxNTE5MV8xX2hkNzQ4XzY4MA==_s.jpg",
+    "user_sex" : "F",
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "lengchuan9485",
+    "fanCount" : "11.6万",
+    "principalId" : "lengchuan9485",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3x6azccu2784dhu",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/03/27/19/BMjAyNjAzMjcxOTMzMTlfNDYzMDMzOTYwXzFfaGQyMTBfMzIz_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2026/03/27/19/BMjAyNjAzMjcxOTMzMTlfNDYzMDMzOTYwXzFfaGQyMTBfMzIz_s.jpg"
+    } ],
+    "user_name" : "冷川·赵腾腾",
+    "user_id" : 463033960,
+    "user_text" : "零碎的岛屿总会找到海\n恩师：赵腾腾",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/03/27/19/BMjAyNjAzMjcxOTMzMTlfNDYzMDMzOTYwXzFfaGQyMTBfMzIz_s.jpg",
+    "user_sex" : "M",
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "LaoShiRenDuMou",
+    "fanCount" : "123.1万",
+    "principalId" : "LaoShiRenDuMou",
+    "live" : true,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3xddbzgqqbfhe7i",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2023/04/24/18/BMjAyMzA0MjQxODUxMDNfMjY0ODExMTQ5OV8xX2hkMTA2XzM3OA==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2023/04/24/18/BMjAyMzA0MjQxODUxMDNfMjY0ODExMTQ5OV8xX2hkMTA2XzM3OA==_s.jpg"
+    } ],
+    "user_name" : "嘟某（黄狗电竞）",
+    "user_id" : 2648111499,
+    "user_text" : "地铁破产搜：【黄狗电竞】有两个狗头的就是\n开播时间：上午12点  下午6点\n考核：LLS78NB",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2023/04/24/18/BMjAyMzA0MjQxODUxMDNfMjY0ODExMTQ5OV8xX2hkMTA2XzM3OA==_s.jpg",
+    "user_sex" : "F",
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "Darling_ovo_",
+    "fanCount" : "55.1万",
+    "principalId" : "Darling_ovo_",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3xk9pmc6u3kywkq",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/04/01/06/BMjAyNjA0MDEwNjQxNDlfMzIzMzU2MDk4XzFfaGQzNjNfOTU0_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2026/04/01/06/BMjAyNjA0MDEwNjQxNDlfMzIzMzU2MDk4XzFfaGQzNjNfOTU0_s.jpg"
+    } ],
+    "user_name" : "鱼鱼🐟",
+    "user_id" : 323356098,
+    "user_text" : "我失踪了",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/04/01/06/BMjAyNjA0MDEwNjQxNDlfMzIzMzU2MDk4XzFfaGQzNjNfOTU0_s.jpg",
+    "user_sex" : "M",
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "ZZ122A666",
+    "fanCount" : "24.8万",
+    "principalId" : "ZZ122A666",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3x2px7mch3tgf4g",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2022/03/18/13/BMjAyMjAzMTgxMzE3MzFfMTIxMTk4NzQxNV8yX2hkNjU0Xzk5MA==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2022/03/18/13/BMjAyMjAzMTgxMzE3MzFfMTIxMTk4NzQxNV8yX2hkNjU0Xzk5MA==_s.jpg"
+    } ],
+    "user_name" : "专注事故分析",
+    "user_id" : 1211987415,
+    "user_text" : "每周二、四、六20:00不定期直播\n@专注事故分析数十万起\n@专注快车的防御驾驶十年\n@坚持“爱憎分明，嫉恶如仇”的网络生态\n@《观察力9要素》开拓者\n@《开车的32条黄金法则》开拓者\n@《开车的66条安全技巧》开拓者",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2022/03/18/13/BMjAyMjAzMTgxMzE3MzFfMTIxMTk4NzQxNV8yX2hkNjU0Xzk5MA==_s.jpg",
+    "user_sex" : "M",
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "lingdezhixing",
+    "fanCount" : "34.7万",
+    "principalId" : "lingdezhixing",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3x8whq5bx7v46ks",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/09/04/20/BMjAyNDA5MDQyMDQ0NDdfMTg4OTk4MDkzOV8yX2hkMzlfMTcx_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2024/09/04/20/BMjAyNDA5MDQyMDQ0NDdfMTg4OTk4MDkzOV8yX2hkMzlfMTcx_s.jpg"
+    } ],
+    "user_name" : "零的执行",
+    "user_id" : 1889980939,
+    "user_text" : "感谢快手官方\n挑战单人双冠原创视频\n商务v：同快手号",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/09/04/20/BMjAyNDA5MDQyMDQ0NDdfMTg4OTk4MDkzOV8yX2hkMzlfMTcx_s.jpg",
+    "user_sex" : "M",
+    "isFavorited" : false
+  } ]
+}, {
+  "id" : 1000005,
+  "name" : "脱口秀",
+  "categoryType" : 0,
+  "authorList" : [ {
+    "kwaiId" : "zyc20131217",
+    "fanCount" : "18.3万",
+    "principalId" : "zyc20131217",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xejehwi3myp6wk",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/05/30/21/BMjAyNTA1MzAyMTEzMjFfMTMwMzA3ODc2NV8yX2hkNDc2XzMyOA==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2025/05/30/21/BMjAyNTA1MzAyMTEzMjFfMTMwMzA3ODc2NV8yX2hkNDc2XzMyOA==_s.jpg"
+    } ],
+    "user_name" : "五悦",
+    "isFavorited" : false,
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/05/30/21/BMjAyNTA1MzAyMTEzMjFfMTMwMzA3ODc2NV8yX2hkNDc2XzMyOA==_s.jpg",
+    "user_sex" : "M",
+    "user_id" : 1303078765,
+    "user_text" : "🌹来自陕西宝鸡60后宝奶\n🌹唱歌+聊天+带货主播\n❤ 每天分享自己做快手的经验技巧"
+  }, {
+    "fanCount" : "94万",
+    "principalId" : "3x6aqfvchxigeqw",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3x6aqfvchxigeqw",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2022/11/07/22/BMjAyMjExMDcyMjE2MjJfMzEwMTM5MzY2OF8xX2hkOTZfOTYz_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2022/11/07/22/BMjAyMjExMDcyMjE2MjJfMzEwMTM5MzY2OF8xX2hkOTZfOTYz_s.jpg"
+    } ],
+    "user_name" : "大事件发哥",
+    "isFavorited" : false,
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2022/11/07/22/BMjAyMjExMDcyMjE2MjJfMzEwMTM5MzY2OF8xX2hkOTZfOTYz_s.jpg",
+    "user_sex" : "M",
+    "user_id" : 3101393668,
+    "user_text" : "🌹每天早上6.00  下午17.00直播\n🚩搜罗天下大事小情   🚩分享社会热点\n🚩传递正能量               🚩感谢快手平台\n🚩吉林市土特产请联系我 🚩商家合作yxf1978226"
+  }, {
+    "fanCount" : "38.4万",
+    "principalId" : "3x3nhp3hwnqqn2g",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3x3nhp3hwnqqn2g",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/12/26/21/BMjAyNTEyMjYyMTU4MjVfMzE1Mjg3ODQ2N18xX2hkMjgwXzc4Nw==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2025/12/26/21/BMjAyNTEyMjYyMTU4MjVfMzE1Mjg3ODQ2N18xX2hkMjgwXzc4Nw==_s.jpg"
+    } ],
+    "user_name" : "主播 云峰",
+    "isFavorited" : false,
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/12/26/21/BMjAyNTEyMjYyMTU4MjVfMzE1Mjg3ODQ2N18xX2hkMjgwXzc4Nw==_s.jpg",
+    "user_sex" : "M",
+    "user_id" : 3152878467,
+    "user_text" : "每天早上4：30点直播\n我们生在红旗下，长在春风里，人民有信仰，国家有力量，民族有希望，目光所至皆为华夏，五星闪耀皆为信仰信仰，愿以吾辈之青春，捍卫盛世之中华。"
+  }, {
+    "kwaiId" : "dazhuoshuo",
+    "fanCount" : "288.4万",
+    "principalId" : "dazhuoshuo",
+    "live" : false,
+    "verified" : true,
+    "verifiedDetail" : {
+      "description" : "主持人",
+      "iconType" : 1,
+      "viceVerifiedType" : 0,
+      "newVerified" : true,
+      "musicCompany" : false,
+      "type" : 6
+    },
+    "following" : false,
+    "eid" : "3x8tx9mw8zr5qfu",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/09/24/11/BMjAyNTA5MjQxMTQ3NDBfMTQxNTU2ODQzMV8yX2hkMjA5XzUwNw==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2025/09/24/11/BMjAyNTA5MjQxMTQ3NDBfMTQxNTU2ODQzMV8yX2hkMjA5XzUwNw==_s.jpg"
+    } ],
+    "user_name" : "大卓说事儿",
+    "isFavorited" : false,
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/09/24/11/BMjAyNTA5MjQxMTQ3NDBfMTQxNTU2ODQzMV8yX2hkMjA5XzUwNw==_s.jpg",
+    "user_sex" : "M",
+    "user_id" : 1415568431,
+    "user_text" : "每天晚上17:00直播！\n有角度的新闻，有深度的评论。\n有态度的爷们，有温度的主持人。\n商务+V：13396597955"
+  }, {
+    "kwaiId" : "WTB518518518",
+    "fanCount" : "40万",
+    "principalId" : "WTB518518518",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xr9ghy9vj6xiq2",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/04/05/13/BMjAyNjA0MDUxMzA5NDBfMTI1NTUzMzMzOF8yX2hkNDkwXzY4MQ==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2026/04/05/13/BMjAyNjA0MDUxMzA5NDBfMTI1NTUzMzMzOF8yX2hkNDkwXzY4MQ==_s.jpg"
+    } ],
+    "user_name" : "老五有故事（国际）",
+    "isFavorited" : false,
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/04/05/13/BMjAyNjA0MDUxMzA5NDBfMTI1NTUzMzMzOF8yX2hkNDkwXzY4MQ==_s.jpg",
+    "user_sex" : "M",
+    "user_id" : 1255533338,
+    "user_text" : "说尽天下，喜欢的点个关注"
+  }, {
+    "fanCount" : "240.3万",
+    "principalId" : "3xdmaqj56b8jdbk",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xdmaqj56b8jdbk",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/11/26/14/BMjAyNDExMjYxNDI2MDNfMjc2NDYyODkwM18yX2hkMjA4Xzg1OQ==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2024/11/26/14/BMjAyNDExMjYxNDI2MDNfMjc2NDYyODkwM18yX2hkMjA4Xzg1OQ==_s.jpg"
+    } ],
+    "user_name" : "金哥观天下（晚八点直播）",
+    "isFavorited" : false,
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/11/26/14/BMjAyNDExMjYxNDI2MDNfMjc2NDYyODkwM18yX2hkMjA4Xzg1OQ==_s.jpg",
+    "user_sex" : "M",
+    "user_id" : 2764628903,
+    "user_text" : "鹰派强硬派评论员\n\n每天晚上八点直播\n\n俄乌战争亲历者，工厂在战争中被炸毁。\n损失过千万，重头再来。"
+  }, {
+    "kwaiId" : "WW15164535151",
+    "fanCount" : "647.5万",
+    "principalId" : "WW15164535151",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xwbqdctfz82kfm",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p4-pro.a.yximgs.com",
+      "url" : "https://p4-pro.a.yximgs.com/uhead/AB/2024/11/30/13/BMjAyNDExMzAxMzQ2MTFfMTQ3MjQxNjM1NF8yX2hkNjUwXzI0MQ==_s.jpg"
+    }, {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/11/30/13/BMjAyNDExMzAxMzQ2MTFfMTQ3MjQxNjM1NF8yX2hkNjUwXzI0MQ==_s.jpg"
+    } ],
+    "user_name" : "主持王唯926大队",
+    "isFavorited" : false,
+    "headurl" : "https://p4-pro.a.yximgs.com/uhead/AB/2024/11/30/13/BMjAyNDExMzAxMzQ2MTFfMTQ3MjQxNjM1NF8yX2hkNjUwXzI0MQ==_s.jpg",
+    "user_sex" : "M",
+    "user_id" : 1472416354,
+    "user_text" : "感谢快手平台\n19：00开播\n若为热爱，便所向披靡！\n商务fc20221119"
+  }, {
+    "fanCount" : "13.9万",
+    "principalId" : "3xzj69wcs58j2xy",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xzj69wcs58j2xy",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/03/12/14/BMjAyNjAzMTIxNDU5NTRfMTM1OTQ4NTMyXzFfaGQzNDRfNDkx_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2026/03/12/14/BMjAyNjAzMTIxNDU5NTRfMTM1OTQ4NTMyXzFfaGQzNDRfNDkx_s.jpg"
+    } ],
+    "user_name" : "主播大胜",
+    "isFavorited" : false,
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/03/12/14/BMjAyNjAzMTIxNDU5NTRfMTM1OTQ4NTMyXzFfaGQzNDRfNDkx_s.jpg",
+    "user_sex" : "M",
+    "user_id" : 135948532,
+    "user_text" : "为天地立心✨为生民立命✨\n为往圣继绝学 为万世开太平"
+  }, {
+    "kwaiId" : "zhangjun131419",
+    "fanCount" : "148.4万",
+    "principalId" : "zhangjun131419",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xpwfjtif7vg2cu",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2022/08/09/15/BMjAyMjA4MDkxNTA0MDJfMjgzMDQzMzgxM18xX2hkOTQxXzY3Mg==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2022/08/09/15/BMjAyMjA4MDkxNTA0MDJfMjgzMDQzMzgxM18xX2hkOTQxXzY3Mg==_s.jpg"
+    } ],
+    "user_name" : "主播张君",
+    "isFavorited" : false,
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2022/08/09/15/BMjAyMjA4MDkxNTA0MDJfMjgzMDQzMzgxM18xX2hkOTQxXzY3Mg==_s.jpg",
+    "user_sex" : "M",
+    "user_id" : 2830433813,
+    "user_text" : "人到中年不油腻\n新闻热点权解析\n纵观国际大小事\n直播间里就等你\n开播时间：每天中午11：43\n招商售后：（zzzz13131919）供应链团长勿扰 \n只有这一个号"
+  }, {
+    "fanCount" : "11.8万",
+    "principalId" : "3xrx7v2rtity64m",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xrx7v2rtity64m",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/10/15/09/BMjAyNDEwMTUwOTE5MzVfMzk1NzEyODgxOV8yX2hkNjY0XzY3Ng==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2024/10/15/09/BMjAyNDEwMTUwOTE5MzVfMzk1NzEyODgxOV8yX2hkNjY0XzY3Ng==_s.jpg"
+    } ],
+    "user_name" : "小晨",
+    "isFavorited" : false,
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/10/15/09/BMjAyNDEwMTUwOTE5MzVfMzk1NzEyODgxOV8yX2hkNjY0XzY3Ng==_s.jpg",
+    "user_sex" : "M",
+    "user_id" : 3957128819,
+    "user_text" : ""
+  } ]
+}, {
+  "id" : 1000020,
+  "name" : "购物",
+  "categoryType" : 0,
+  "authorList" : [ {
+    "kwaiId" : "Q77772223",
+    "fanCount" : "52.6万",
+    "principalId" : "Q77772223",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xjewdcfstdqd7y",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2018/11/25/17/BMjAxODExMjUxNzE0MTBfMTA4MDM0Mjc5Nl8xX2hkOTAwXzE4MA==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2018/11/25/17/BMjAxODExMjUxNzE0MTBfMTA4MDM0Mjc5Nl8xX2hkOTAwXzE4MA==_s.jpg"
+    } ],
+    "isFavorited" : false,
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2018/11/25/17/BMjAxODExMjUxNzE0MTBfMTA4MDM0Mjc5Nl8xX2hkOTAwXzE4MA==_s.jpg",
+    "user_sex" : "F",
+    "user_name" : "刘夫人［店铺] 女装店",
+    "user_id" : 1080342796,
+    "user_text" : ""
+  }, {
+    "kwaiId" : "xiaoqing01hao",
+    "fanCount" : "18.3万",
+    "principalId" : "xiaoqing01hao",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xyssp39uwg36x2",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p4-pro.a.yximgs.com",
+      "url" : "https://p4-pro.a.yximgs.com/uhead/AB/2023/11/25/18/BMjAyMzExMjUxODM3NTRfMzU3ODg0Ml8xX2hkNzU2XzcxMw==_s.jpg"
+    }, {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2023/11/25/18/BMjAyMzExMjUxODM3NTRfMzU3ODg0Ml8xX2hkNzU2XzcxMw==_s.jpg"
+    } ],
+    "isFavorited" : false,
+    "headurl" : "https://p4-pro.a.yximgs.com/uhead/AB/2023/11/25/18/BMjAyMzExMjUxODM3NTRfMzU3ODg0Ml8xX2hkNzU2XzcxMw==_s.jpg",
+    "user_sex" : "F",
+    "user_name" : "晴欧尼🖤早9:00直播",
+    "user_id" : 3578842,
+    "user_text" : "早上9:00直播 🙋🏻‍♀️\n\n主做杭州意法、四季青当季最新款\n\n韩系风格🇰🇷一件起批🧡质好、价优、款新\n\n🌈本人身高159cm 体重90斤"
+  }, {
+    "fanCount" : "50.1万",
+    "principalId" : "3xyjs6iccjtneva",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xyjs6iccjtneva",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/08/30/17/BMjAyNTA4MzAxNzIxMjBfNTAwNDMyNDYwM18yX2hkMjA5XzEyNw==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2025/08/30/17/BMjAyNTA4MzAxNzIxMjBfNTAwNDMyNDYwM18yX2hkMjA5XzEyNw==_s.jpg"
+    } ],
+    "isFavorited" : false,
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/08/30/17/BMjAyNTA4MzAxNzIxMjBfNTAwNDMyNDYwM18yX2hkMjA5XzEyNw==_s.jpg",
+    "user_sex" : "F",
+    "user_name" : "苗姐-非遗文化官",
+    "user_id" : 5004324603,
+    "user_text" : "承蒙厚爱，感恩，不忘初心\n非遗文化传承推荐官"
+  }, {
+    "fanCount" : "144.4万",
+    "principalId" : "3xtajvx3eniin6k",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xtajvx3eniin6k",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/06/19/18/BMjAyNTA2MTkxODM4NTdfMjY5NTg0NDk0M18xX2hkMzFfMjg5_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2025/06/19/18/BMjAyNTA2MTkxODM4NTdfMjY5NTg0NDk0M18xX2hkMzFfMjg5_s.jpg"
+    } ],
+    "isFavorited" : false,
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/06/19/18/BMjAyNTA2MTkxODM4NTdfMjY5NTg0NDk0M18xX2hkMzFfMjg5_s.jpg",
+    "user_sex" : "M",
+    "user_name" : "陈鸿起-每晚8点",
+    "user_id" : 2695844943,
+    "user_text" : "福往者福来，爱出者爱返🔥\n认识我只是一个开始 顶峰见！\n商务: hq71988\n每晚8点直播🔥\n主动私信联系你们的都是骗子！"
+  }, {
+    "kwaiId" : "xyz520bbb",
+    "fanCount" : "18.2万",
+    "principalId" : "xyz520bbb",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xawnqm8czg3wny",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2022/08/02/20/BMjAyMjA4MDIyMDE4NDhfMTk3MDg2NjY3XzFfaGQ4Ml83NTY=_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2022/08/02/20/BMjAyMjA4MDIyMDE4NDhfMTk3MDg2NjY3XzFfaGQ4Ml83NTY=_s.jpg"
+    } ],
+    "isFavorited" : false,
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2022/08/02/20/BMjAyMjA4MDIyMDE4NDhfMTk3MDg2NjY3XzFfaGQ4Ml83NTY=_s.jpg",
+    "user_sex" : "F",
+    "user_name" : "饭团呀🥰",
+    "user_id" : 197086667,
+    "user_text" : "腊肉🐷：zxc295520\n一切重新开始：相信越努力越幸运\n这是我一个人独居的13年🥰\n每天更新简单的日常，谢谢大家能够喜欢🥰\n 性格大大咧咧说话直接，如有得罪请多多包容😜\n努力挣钱，好好生活，多爱自己🥰"
+  }, {
+    "fanCount" : "23.9万",
+    "principalId" : "3xqite7cwfjavqw",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xqite7cwfjavqw",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p4-pro.a.yximgs.com",
+      "url" : "https://p4-pro.a.yximgs.com/uhead/AB/2025/05/08/14/BMjAyNTA1MDgxNDI2MTlfMzczMzU5Nzg0MV8xX2hkNDMyXzEwNw==_s.jpg"
+    }, {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/05/08/14/BMjAyNTA1MDgxNDI2MTlfMzczMzU5Nzg0MV8xX2hkNDMyXzEwNw==_s.jpg"
+    } ],
+    "isFavorited" : false,
+    "headurl" : "https://p4-pro.a.yximgs.com/uhead/AB/2025/05/08/14/BMjAyNTA1MDgxNDI2MTlfMzczMzU5Nzg0MV8xX2hkNDMyXzEwNw==_s.jpg",
+    "user_sex" : "M",
+    "user_name" : "陈建泽严选汽车城三哥",
+    "user_id" : 3733597841,
+    "user_text" : "陈建泽严选汽车城，常年收售各款大小车型。上到劳斯莱斯宾利，下到QQ夏利。别问我有啥，就问你要啥。想买什么车型来松原58车行找三哥。我们会用最优质的服务对待好每一位有需求的用户！"
+  }, {
+    "kwaiId" : "BXQ981218",
+    "fanCount" : "171.7万",
+    "principalId" : "BXQ981218",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3x4wvzp7cagbc74",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/08/09/03/BMjAyNDA4MDkwMzI1MzRfMzMwNTc0MTg1XzFfaGQxOF80OTQ=_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2024/08/09/03/BMjAyNDA4MDkwMzI1MzRfMzMwNTc0MTg1XzFfaGQxOF80OTQ=_s.jpg"
+    } ],
+    "isFavorited" : false,
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/08/09/03/BMjAyNDA4MDkwMzI1MzRfMzMwNTc0MTg1XzFfaGQxOF80OTQ=_s.jpg",
+    "user_sex" : "F",
+    "user_name" : "白崩崩",
+    "user_id" : 330574185,
+    "user_text" : ""
+  }, {
+    "kwaiId" : "my1740122",
+    "fanCount" : "51.3万",
+    "principalId" : "my1740122",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3x4ge47xxbxi8me",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p4-pro.a.yximgs.com",
+      "url" : "https://p4-pro.a.yximgs.com/uhead/AB/2020/06/18/16/BMjAyMDA2MTgxNjAzMTNfNTE5NTU5NjgzXzJfaGQxMzBfNTM0_s.jpg"
+    }, {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2020/06/18/16/BMjAyMDA2MTgxNjAzMTNfNTE5NTU5NjgzXzJfaGQxMzBfNTM0_s.jpg"
+    } ],
+    "isFavorited" : false,
+    "headurl" : "https://p4-pro.a.yximgs.com/uhead/AB/2020/06/18/16/BMjAyMDA2MTgxNjAzMTNfNTE5NTU5NjgzXzJfaGQxMzBfNTM0_s.jpg",
+    "user_sex" : "F",
+    "user_name" : "小马饱莉🐎",
+    "user_id" : 519559683,
+    "user_text" : "我是一个农村宝妈 谢谢大家对我的喜欢与支持。谢谢快手绿色平台给的每一个热门 ，谢谢每一个家人们的支持。你们的小红❤️就是我最大的动力"
+  }, {
+    "fanCount" : "86.7万",
+    "principalId" : "3xx7ghefmuir9pm",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xx7ghefmuir9pm",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p4-pro.a.yximgs.com",
+      "url" : "https://p4-pro.a.yximgs.com/uhead/AB/2024/05/04/19/BMjAyNDA1MDQxOTAyMDJfNDEwMDQyOTE2Ml8xX2hkNDk4Xzc0Nw==_s.jpg"
+    }, {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/05/04/19/BMjAyNDA1MDQxOTAyMDJfNDEwMDQyOTE2Ml8xX2hkNDk4Xzc0Nw==_s.jpg"
+    } ],
+    "isFavorited" : false,
+    "headurl" : "https://p4-pro.a.yximgs.com/uhead/AB/2024/05/04/19/BMjAyNDA1MDQxOTAyMDJfNDEwMDQyOTE2Ml8xX2hkNDk4Xzc0Nw==_s.jpg",
+    "user_sex" : "M",
+    "user_name" : "土偏方分享☀️",
+    "user_id" : 4100429162,
+    "user_text" : "把老一辈儿的知识分享给大家，把老祖宗的文化传给千家万户。\n传递正能量👍👍👍👍👍👍👍👍👍👍👍👍👍\n私信不能及时回复，望理解😊"
+  }, {
+    "kwaiId" : "zhang189106",
+    "fanCount" : "377.2万",
+    "principalId" : "zhang189106",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xvhf6mdd3v9z3a",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2021/11/18/14/BMjAyMTExMTgxNDE0MjBfNzk2NjQ3ODkzXzFfaGQ1MDNfMjMw_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2021/11/18/14/BMjAyMTExMTgxNDE0MjBfNzk2NjQ3ODkzXzFfaGQ1MDNfMjMw_s.jpg"
+    } ],
+    "isFavorited" : false,
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2021/11/18/14/BMjAyMTExMTgxNDE0MjBfNzk2NjQ3ODkzXzFfaGQ1MDNfMjMw_s.jpg",
+    "user_sex" : "F",
+    "user_name" : "帆帆家 【每天一点直播】",
+    "user_id" : 796647893,
+    "user_text" : "踏踏实实做人，认认真真做事\n感谢大家的每一个关注，定不负期望\n每天下午一点直播\n实力厂家合作+qipan---\n商务合作，联系小店客服"
+  } ]
+}, {
+  "id" : 1000023,
+  "name" : "科普",
+  "categoryType" : 0,
+  "authorList" : [ {
+    "kwaiId" : "bhy1-5h8um96i",
+    "fanCount" : "14.5万",
+    "principalId" : "bhy1-5h8um96i",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xgcqiaxcaed8wm",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/12/27/09/BMjAyNDEyMjcwOTU1MjJfMTg2NzIyMTQwXzJfaGQzODhfMzM2_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2024/12/27/09/BMjAyNDEyMjcwOTU1MjJfMTg2NzIyMTQwXzJfaGQzODhfMzM2_s.jpg"
+    } ],
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/12/27/09/BMjAyNDEyMjcwOTU1MjJfMTg2NzIyMTQwXzJfaGQzODhfMzM2_s.jpg",
+    "user_sex" : "F",
+    "visitorBeFollowed" : false,
+    "user_id" : 186722140,
+    "user_name" : "科一科四不烦恼",
+    "isFavorited" : false,
+    "user_text" : "❤️感谢快手官方，感谢各位关注💕\n💜科一科四用技巧，科二科三记点位💕\n💛关注我 每天给大家分享学车技巧💕\n🧡2026带您轻松拿驾照💕"
+  }, {
+    "kwaiId" : "QXFW_liaoning",
+    "fanCount" : "15.4万",
+    "principalId" : "QXFW_liaoning",
+    "live" : false,
+    "verified" : true,
+    "verifiedDetail" : {
+      "description" : "辽宁省气象服务中心官方账号",
+      "iconType" : 2,
+      "viceVerifiedType" : 0,
+      "newVerified" : true,
+      "musicCompany" : false,
+      "type" : 9
+    },
+    "following" : false,
+    "eid" : "3xi5uihqezvi4gm",
+    "headurls" : [ {
+      "cdn" : "p5-pro.a.yximgs.com",
+      "url" : "https://p5-pro.a.yximgs.com/uhead/AB/2023/12/15/14/BMjAyMzEyMTUxNDUyMjlfMjU5NDM2Mzk5MV8yX2hkOTIzXzYzNw==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2023/12/15/14/BMjAyMzEyMTUxNDUyMjlfMjU5NDM2Mzk5MV8yX2hkOTIzXzYzNw==_s.jpg"
+    } ],
+    "headurl" : "https://p5-pro.a.yximgs.com/uhead/AB/2023/12/15/14/BMjAyMzEyMTUxNDUyMjlfMjU5NDM2Mzk5MV8yX2hkOTIzXzYzNw==_s.jpg",
+    "user_sex" : "M",
+    "visitorBeFollowed" : false,
+    "user_id" : 2594363991,
+    "user_name" : "辽宁天气",
+    "isFavorited" : false,
+    "user_text" : "2024年度快手平台影响力政务账号。\n全国气象快手2024年度影响力前十名。\n2024年连续12个月荣登全国气象排行榜单。"
+  }, {
+    "fanCount" : "40.3万",
+    "principalId" : "3xt8qfzfttu7xmk",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xt8qfzfttu7xmk",
+    "headurls" : [ {
+      "cdn" : "p5-pro.a.yximgs.com",
+      "url" : "https://p5-pro.a.yximgs.com/uhead/AB/2026/01/09/22/BMjAyNjAxMDkyMjMxMDlfMjg4NDczNDAwOF8xX2hkOTcxXzYyMg==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2026/01/09/22/BMjAyNjAxMDkyMjMxMDlfMjg4NDczNDAwOF8xX2hkOTcxXzYyMg==_s.jpg"
+    } ],
+    "headurl" : "https://p5-pro.a.yximgs.com/uhead/AB/2026/01/09/22/BMjAyNjAxMDkyMjMxMDlfMjg4NDczNDAwOF8xX2hkOTcxXzYyMg==_s.jpg",
+    "user_sex" : "M",
+    "visitorBeFollowed" : false,
+    "user_id" : 2884734008,
+    "user_name" : "文霆",
+    "isFavorited" : false,
+    "user_text" : "文霆集团全球执行总裁\n《财富》全球最具影响力集团\n哈佛大学商学院 荣誉客座教授\n国际商业合作联盟亚太区常务理事"
+  }, {
+    "kwaiId" : "Aa5173999",
+    "fanCount" : "30.6万",
+    "principalId" : "Aa5173999",
+    "live" : true,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xjxxt4nx8bnqcq",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/02/13/07/BMjAyNjAyMTMwNzI2NTZfMzczODE4Njc0M18yX2hkNTE1XzY4Ng==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2026/02/13/07/BMjAyNjAyMTMwNzI2NTZfMzczODE4Njc0M18yX2hkNTE1XzY4Ng==_s.jpg"
+    } ],
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/02/13/07/BMjAyNjAyMTMwNzI2NTZfMzczODE4Njc0M18yX2hkNTE1XzY4Ng==_s.jpg",
+    "user_sex" : "M",
+    "visitorBeFollowed" : false,
+    "user_id" : 3738186743,
+    "user_name" : "吕梁老苗（目标向前）",
+    "isFavorited" : false,
+    "user_text" : "我是老苗\n曾经风光，如今负债\n不抱怨、不低头、不放弃\n从零开始，重新上路\n目标向前，东山再起！"
+  }, {
+    "kwaiId" : "huihui8826",
+    "fanCount" : "16.5万",
+    "principalId" : "huihui8826",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xbj9fg8qwt9bem",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2019/02/20/00/BMjAxOTAyMjAwMDAwMTFfMTI1ODI1NzM2OV8yX2hkNTc3XzMwNw==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2019/02/20/00/BMjAxOTAyMjAwMDAwMTFfMTI1ODI1NzM2OV8yX2hkNTc3XzMwNw==_s.jpg"
+    } ],
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2019/02/20/00/BMjAxOTAyMjAwMDAwMTFfMTI1ODI1NzM2OV8yX2hkNTc3XzMwNw==_s.jpg",
+    "user_sex" : "F",
+    "visitorBeFollowed" : false,
+    "user_id" : 1258257369,
+    "user_name" : "慧慧在韩国",
+    "isFavorited" : false,
+    "user_text" : "很愿意和你分享我在韩国生活的点点滴滴\n\n关注我，和我一起用中国人的视角看韩国\n\n小号:@小韩不姓韩"
+  }, {
+    "kwaiId" : "qulaoshi365",
+    "fanCount" : "110.4万",
+    "principalId" : "qulaoshi365",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xjpenujn3jqpgi",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2022/01/19/15/BMjAyMjAxMTkxNTE2MzBfMTI2MDg2NjM5N18yX2hkMV82MjU=_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2022/01/19/15/BMjAyMjAxMTkxNTE2MzBfMTI2MDg2NjM5N18yX2hkMV82MjU=_s.jpg"
+    } ],
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2022/01/19/15/BMjAyMjAxMTkxNTE2MzBfMTI2MDg2NjM5N18yX2hkMV82MjU=_s.jpg",
+    "user_sex" : "M",
+    "visitorBeFollowed" : false,
+    "user_id" : 1260866397,
+    "user_name" : "老曲讲升学",
+    "isFavorited" : false,
+    "user_text" : "每天上午九点半快手直播，免费指导家长做规划，少一些套路，多一些真诚！"
+  }, {
+    "fanCount" : "89万",
+    "principalId" : "3xay6aqtc7yqphm",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xay6aqtc7yqphm",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/02/25/12/BMjAyNTAyMjUxMjIyNDlfNDY0OTA4NzE1N18xX2hkNjIyXzE5NQ==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2025/02/25/12/BMjAyNTAyMjUxMjIyNDlfNDY0OTA4NzE1N18xX2hkNjIyXzE5NQ==_s.jpg"
+    } ],
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/02/25/12/BMjAyNTAyMjUxMjIyNDlfNDY0OTA4NzE1N18xX2hkNjIyXzE5NQ==_s.jpg",
+    "user_sex" : "F",
+    "visitorBeFollowed" : false,
+    "user_id" : 4649087157,
+    "user_name" : "小美观天下",
+    "isFavorited" : false,
+    "user_text" : "小美观天下，观天下大事！\n讲真话，讲事实，看天下！\n晚19:00直播"
+  }, {
+    "fanCount" : "78.9万",
+    "principalId" : "3xaj6vxzcnxsig2",
+    "live" : false,
+    "verified" : true,
+    "verifiedDetail" : {
+      "description" : "首都医科大学附属北京地坛医院皮肤性病科医生",
+      "iconType" : 1,
+      "viceVerifiedType" : 0,
+      "newVerified" : true,
+      "musicCompany" : false,
+      "type" : 6
+    },
+    "following" : false,
+    "eid" : "3xaj6vxzcnxsig2",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/09/28/15/BMjAyNTA5MjgxNTM3NThfMTYyMzI1MjU2NF8yX2hkNDI4XzQy_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2025/09/28/15/BMjAyNTA5MjgxNTM3NThfMTYyMzI1MjU2NF8yX2hkNDI4XzQy_s.jpg"
+    } ],
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/09/28/15/BMjAyNTA5MjgxNTM3NThfMTYyMzI1MjU2NF8yX2hkNDI4XzQy_s.jpg",
+    "user_sex" : "F",
+    "visitorBeFollowed" : false,
+    "user_id" : 1623252564,
+    "user_name" : "地坛刘彦春医生",
+    "isFavorited" : false,
+    "user_text" : ""
+  }, {
+    "fanCount" : "28.3万",
+    "principalId" : "3x327vaucskjscy",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3x327vaucskjscy",
+    "headurls" : [ {
+      "cdn" : "p5-pro.a.yximgs.com",
+      "url" : "https://p5-pro.a.yximgs.com/uhead/AB/2024/05/08/10/BMjAyNDA1MDgxMDQ4MzJfMzY1OTM5NjUyN18yX2hkNDkwXzUxNQ==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2024/05/08/10/BMjAyNDA1MDgxMDQ4MzJfMzY1OTM5NjUyN18yX2hkNDkwXzUxNQ==_s.jpg"
+    } ],
+    "headurl" : "https://p5-pro.a.yximgs.com/uhead/AB/2024/05/08/10/BMjAyNDA1MDgxMDQ4MzJfMzY1OTM5NjUyN18yX2hkNDkwXzUxNQ==_s.jpg",
+    "user_sex" : "F",
+    "visitorBeFollowed" : false,
+    "user_id" : 3659396527,
+    "user_name" : "幸福乡村情报官",
+    "isFavorited" : false,
+    "user_text" : "🌾种地有问题，连线我帮你\n🌾分享种地实用知识\n🌾为农民增产增收"
+  }, {
+    "kwaiId" : "ww_77777776",
+    "fanCount" : "85.6万",
+    "principalId" : "ww_77777776",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xvwp7h8hp52x24",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/04/05/21/BMjAyNDA0MDUyMTA1MzhfMjc2ODEzNDgzXzFfaGQ0MDBfMjE0_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2024/04/05/21/BMjAyNDA0MDUyMTA1MzhfMjc2ODEzNDgzXzFfaGQ0MDBfMjE0_s.jpg"
+    } ],
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/04/05/21/BMjAyNDA0MDUyMTA1MzhfMjc2ODEzNDgzXzFfaGQ0MDBfMjE0_s.jpg",
+    "user_sex" : "F",
+    "visitorBeFollowed" : false,
+    "user_id" : 276813483,
+    "user_name" : "雯雯说景",
+    "isFavorited" : false,
+    "user_text" : "做一个有追求的主播\n用流量传递正能量"
+  } ]
+}, {
+  "id" : 1000003,
+  "name" : "音乐",
+  "categoryType" : 0,
+  "authorList" : [ {
+    "kwaiId" : "JieShao-",
+    "fanCount" : "20.1万",
+    "principalId" : "JieShao-",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xmeu6hgvgt65ta",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p5-pro.a.yximgs.com",
+      "url" : "https://p5-pro.a.yximgs.com/uhead/AB/2024/11/03/23/BMjAyNDExMDMyMzE3MDRfNDgwOTMxMV8xX2hkODY1XzEwNA==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2024/11/03/23/BMjAyNDExMDMyMzE3MDRfNDgwOTMxMV8xX2hkODY1XzEwNA==_s.jpg"
+    } ],
+    "headurl" : "https://p5-pro.a.yximgs.com/uhead/AB/2024/11/03/23/BMjAyNDExMDMyMzE3MDRfNDgwOTMxMV8xX2hkODY1XzEwNA==_s.jpg",
+    "user_sex" : "M",
+    "user_text" : "一个热爱生活的甘肃娃❤️\n\n承蒙大家的厚爱❤️谢谢大家支持点赞。",
+    "isFavorited" : false,
+    "user_name" : "浪子杰少",
+    "user_id" : 4809311
+  }, {
+    "fanCount" : "166.7万",
+    "principalId" : "3xu5vkzndzz6sqk",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xu5vkzndzz6sqk",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/08/28/22/BMjAyNTA4MjgyMjQyMzBfMjgzNDY4NjUyNF8xX2hkMzgxXzExMg==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2025/08/28/22/BMjAyNTA4MjgyMjQyMzBfMjgzNDY4NjUyNF8xX2hkMzgxXzExMg==_s.jpg"
+    } ],
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/08/28/22/BMjAyNTA4MjgyMjQyMzBfMjgzNDY4NjUyNF8xX2hkMzgxXzExMg==_s.jpg",
+    "user_sex" : "M",
+    "user_text" : "不用懂我！看我笑话就好\n商务合作：wxp3516216992（备注来意）",
+    "isFavorited" : false,
+    "user_name" : "林三岁（黑化中）",
+    "user_id" : 2834686524
+  }, {
+    "fanCount" : "24.8万",
+    "principalId" : "3x26ahtckv94qpm",
+    "live" : false,
+    "verified" : true,
+    "verifiedDetail" : {
+      "description" : "涿鹿腾优飞选汽车销售有限公司 关联账号",
+      "iconType" : 2,
+      "viceVerifiedType" : 0,
+      "newVerified" : true,
+      "musicCompany" : false,
+      "type" : 10
+    },
+    "following" : false,
+    "eid" : "3x26ahtckv94qpm",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p5-pro.a.yximgs.com",
+      "url" : "https://p5-pro.a.yximgs.com/uhead/AB/2020/12/12/10/BMjAyMDEyMTIxMDQyNTRfMjA2NzAzNDY3NF8yX2hkNDMyXzk0_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2020/12/12/10/BMjAyMDEyMTIxMDQyNTRfMjA2NzAzNDY3NF8yX2hkNDMyXzk0_s.jpg"
+    } ],
+    "headurl" : "https://p5-pro.a.yximgs.com/uhead/AB/2020/12/12/10/BMjAyMDEyMTIxMDQyNTRfMjA2NzAzNDY3NF8yX2hkNDMyXzk0_s.jpg",
+    "user_sex" : "M",
+    "user_text" : "二手车信息咨询。诚信经营。感谢快手平台。",
+    "isFavorited" : false,
+    "user_name" : "文东说车",
+    "user_id" : 2067034674
+  }, {
+    "kwaiId" : "okshanjun",
+    "fanCount" : "52.2万",
+    "principalId" : "okshanjun",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3x8bisuu9zt6cru",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p4-pro.a.yximgs.com",
+      "url" : "https://p4-pro.a.yximgs.com/uhead/AB/2026/01/31/12/BMjAyNjAxMzExMjQ1MjBfMjAxNDk2Njg2M18xX2hkMTY2XzkxMg==_s.jpg"
+    }, {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/01/31/12/BMjAyNjAxMzExMjQ1MjBfMjAxNDk2Njg2M18xX2hkMTY2XzkxMg==_s.jpg"
+    } ],
+    "headurl" : "https://p4-pro.a.yximgs.com/uhead/AB/2026/01/31/12/BMjAyNjAxMzExMjQ1MjBfMjAxNDk2Njg2M18xX2hkMTY2XzkxMg==_s.jpg",
+    "user_sex" : "M",
+    "user_text" : "❤️善结诚信  君得人心  正本清源  去伪存真\n✅分享家乡天然食材      💯带乡土特产走出大山\n商务：okshanjun\n直播时间：每日下午2点\n⚠️售后标准：品质问题，退钱不退货",
+    "isFavorited" : false,
+    "user_name" : "善君.正本清源",
+    "user_id" : 2014966863
+  }, {
+    "fanCount" : "107.4万",
+    "principalId" : "3xmyn475ci4x38i",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xmyn475ci4x38i",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p4-pro.a.yximgs.com",
+      "url" : "https://p4-pro.a.yximgs.com/uhead/AB/2025/05/04/19/BMjAyNTA1MDQxOTIzMzdfMjk0NjcyNzIyNV8xX2hkNjI4Xzc3Nw==_s.jpg"
+    }, {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/05/04/19/BMjAyNTA1MDQxOTIzMzdfMjk0NjcyNzIyNV8xX2hkNjI4Xzc3Nw==_s.jpg"
+    } ],
+    "headurl" : "https://p4-pro.a.yximgs.com/uhead/AB/2025/05/04/19/BMjAyNTA1MDQxOTIzMzdfMjk0NjcyNzIyNV8xX2hkNjI4Xzc3Nw==_s.jpg",
+    "user_sex" : "M",
+    "user_text" : "中国中小企业联盟发展大会副主席\n\n文化复兴文化强国提倡者之一\n\n沉香集散中心对外贸易总经理",
+    "isFavorited" : false,
+    "user_name" : "解熠815熠家人",
+    "user_id" : 2946727225
+  }, {
+    "fanCount" : "30.1万",
+    "principalId" : "3xejs9cma7xdv2y",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xejs9cma7xdv2y",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2017/03/31/20/BMjAxNzAzMzEyMDM1NTBfMzg4NjI4MjcxXzJfaGQxNw==.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2017/03/31/20/BMjAxNzAzMzEyMDM1NTBfMzg4NjI4MjcxXzJfaGQxNw==.jpg"
+    } ],
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2017/03/31/20/BMjAxNzAzMzEyMDM1NTBfMzg4NjI4MjcxXzJfaGQxNw==.jpg",
+    "user_sex" : "M",
+    "user_text" : "我是一名二人转演员，谢谢官方的大力支持",
+    "isFavorited" : false,
+    "user_name" : "二人转跑偏",
+    "user_id" : 388628271
+  }, {
+    "kwaiId" : "YoYo0728",
+    "fanCount" : "272.4万",
+    "principalId" : "YoYo0728",
+    "live" : true,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xpz9hmcvkph7vm",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/10/02/23/BMjAyNTEwMDIyMzA4NDBfOTIyMTI3NDlfMV9oZDU3MV8zNA==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2025/10/02/23/BMjAyNTEwMDIyMzA4NDBfOTIyMTI3NDlfMV9oZDU3MV8zNA==_s.jpg"
+    } ],
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/10/02/23/BMjAyNTEwMDIyMzA4NDBfOTIyMTI3NDlfMV9oZDU3MV8zNA==_s.jpg",
+    "user_sex" : "M",
+    "user_text" : "NS:白小白",
+    "isFavorited" : false,
+    "user_name" : "幽河-白小白",
+    "user_id" : 92212749
+  }, {
+    "kwaiId" : "jjjj2006706",
+    "fanCount" : "57.7万",
+    "principalId" : "jjjj2006706",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xp8rkrcvtcnihy",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/02/27/14/BMjAyNjAyMjcxNDMyMzBfNDQxNjA2NjI1OF8xX2hkODM0XzM0MQ==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2026/02/27/14/BMjAyNjAyMjcxNDMyMzBfNDQxNjA2NjI1OF8xX2hkODM0XzM0MQ==_s.jpg"
+    } ],
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/02/27/14/BMjAyNjAyMjcxNDMyMzBfNDQxNjA2NjI1OF8xX2hkODM0XzM0MQ==_s.jpg",
+    "user_sex" : "M",
+    "user_text" : "挂哥新号 多多关照 谢谢追随",
+    "isFavorited" : false,
+    "user_name" : "桂的人🖤",
+    "user_id" : 4416066258
+  }, {
+    "fanCount" : "10.7万",
+    "principalId" : "3xp9yhgqe4xcbxm",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xp9yhgqe4xcbxm",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/12/10/20/BMjAyNTEyMTAyMDExMzBfMjg4MzgxNTIyXzJfaGQ2MzBfMzk5_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2025/12/10/20/BMjAyNTEyMTAyMDExMzBfMjg4MzgxNTIyXzJfaGQ2MzBfMzk5_s.jpg"
+    } ],
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/12/10/20/BMjAyNTEyMTAyMDExMzBfMjg4MzgxNTIyXzJfaGQ2MzBfMzk5_s.jpg",
+    "user_sex" : "M",
+    "user_text" : "商务合作；YANYAN52765\n每天下午三点直播",
+    "isFavorited" : false,
+    "user_name" : "葫芦娃（小彬亲哥）",
+    "user_id" : 288381522
+  }, {
+    "fanCount" : "226.3万",
+    "principalId" : "3xkpv86spwiqqau",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xkpv86spwiqqau",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2021/08/16/10/BMjAyMTA4MTYxMDMxMzBfODE1NjAyODE3XzJfaGQ1NV8xNjU=_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2021/08/16/10/BMjAyMTA4MTYxMDMxMzBfODE1NjAyODE3XzJfaGQ1NV8xNjU=_s.jpg"
+    } ],
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2021/08/16/10/BMjAyMTA4MTYxMDMxMzBfODE1NjAyODE3XzJfaGQ1NV8xNjU=_s.jpg",
+    "user_sex" : "M",
+    "user_text" : "",
+    "isFavorited" : false,
+    "user_name" : "luca小胖子",
+    "user_id" : 815602817
+  } ]
+}, {
+  "id" : 1000006,
+  "name" : "颜值",
+  "categoryType" : 0,
+  "authorList" : [ {
+    "kwaiId" : "shen8d880",
+    "fanCount" : "1.8万",
+    "principalId" : "shen8d880",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xcfymdu8hwwxrq",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/02/21/10/BMjAyNDAyMjExMDU1MzdfODAzOTk3Mjg0XzJfaGQ3MDRfOTEx_s.jpg",
+    "user_sex" : "F",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/02/21/10/BMjAyNDAyMjExMDU1MzdfODAzOTk3Mjg0XzJfaGQ3MDRfOTEx_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2024/02/21/10/BMjAyNDAyMjExMDU1MzdfODAzOTk3Mjg0XzJfaGQ3MDRfOTEx_s.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "马集太空蒜种（申明星）",
+    "user_text" : "金乡县马集太空蒜种基地联系电话18553797257\n大蒜种植技术，科学种地技术管理、土地托管，\n化肥、农药、种子",
+    "user_id" : 803997284,
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "a1137781802",
+    "fanCount" : "13.5万",
+    "principalId" : "a1137781802",
+    "live" : true,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xzx3trezugmvge",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/06/12/08/BMjAyNTA2MTIwODIwMjJfMTEzNzc4MTgwMl8yX2hkNTQzXzc5NA==_b.jpg",
+    "user_sex" : "F",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/06/12/08/BMjAyNTA2MTIwODIwMjJfMTEzNzc4MTgwMl8yX2hkNTQzXzc5NA==_b.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2025/06/12/08/BMjAyNTA2MTIwODIwMjJfMTEzNzc4MTgwMl8yX2hkNTQzXzc5NA==_b.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "菲媚尔服装商行",
+    "user_text" : "感谢官方快手平台\n感谢关注和评论\n非常感谢快手官方绿色平台我想上热门，\n永远支持快手官方平台本店经营女装P发",
+    "user_id" : 1137781802,
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "sd990688",
+    "fanCount" : "2.6万",
+    "principalId" : "sd990688",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xukezftftj58bq",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/06/07/18/BMjAyNTA2MDcxODQwMDFfNDI5NjI5MjIyXzFfaGQ5MTFfNjA3_s.jpg",
+    "user_sex" : "F",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/06/07/18/BMjAyNTA2MDcxODQwMDFfNDI5NjI5MjIyXzFfaGQ5MTFfNjA3_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2025/06/07/18/BMjAyNTA2MDcxODQwMDFfNDI5NjI5MjIyXzFfaGQ5MTFfNjA3_s.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "高寒媳妇，日常💍",
+    "user_text" : "生活百货，感谢快手",
+    "user_id" : 429629222,
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "FXC116118",
+    "fanCount" : "74.7万",
+    "principalId" : "FXC116118",
+    "live" : false,
+    "verified" : true,
+    "verifiedDetail" : {
+      "description" : "店铺账号",
+      "iconType" : 2,
+      "viceVerifiedType" : 0,
+      "musicCompany" : false,
+      "newVerified" : true,
+      "type" : 10
+    },
+    "following" : false,
+    "eid" : "3x6z56fggajbheq",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/01/12/09/BMjAyNjAxMTIwOTQzNDhfODEwOTQwNjIyXzJfaGQ4OTVfMjE4_s.jpg",
+    "user_sex" : "F",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/01/12/09/BMjAyNjAxMTIwOTQzNDhfODEwOTQwNjIyXzJfaGQ4OTVfMjE4_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2026/01/12/09/BMjAyNjAxMTIwOTQzNDhfODEwOTQwNjIyXzJfaGQ4OTVfMjE4_s.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "1618欧韩原创集合店",
+    "user_text" : "感谢快手绿色平台🙏感恩所有的遇见🙏\n主播欧货高端实体店 28年服装穿搭经验👏\n主营深圳欧货☝️原创设计女装☝️高端定制☝️\n坚持品质第一☝️服务第一☝️只引领不追随☝️\n2025年我们自己高端护肤品牌“诗荟泉”\n用心筹备如约而至！诚邀共赴美丽逆龄之约！\n与粉丝分享最新潮流穿搭！让我们一起变美变年轻！",
+    "user_id" : 810940622,
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "xxff0226",
+    "fanCount" : "4.1万",
+    "principalId" : "xxff0226",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3x9mc5kt7icrmgi",
+    "headurl" : "https://p5-pro.a.yximgs.com/uhead/AB/2026/03/05/11/BMjAyNjAzMDUxMTExMjdfMjY5MTIwNjk2N18yX2hkMzE0XzY2_s.jpg",
+    "user_sex" : "F",
+    "headurls" : [ {
+      "cdn" : "p5-pro.a.yximgs.com",
+      "url" : "https://p5-pro.a.yximgs.com/uhead/AB/2026/03/05/11/BMjAyNjAzMDUxMTExMjdfMjY5MTIwNjk2N18yX2hkMzE0XzY2_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2026/03/05/11/BMjAyNjAzMDUxMTExMjdfMjY5MTIwNjk2N18yX2hkMzE0XzY2_s.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "冲浪少女团",
+    "user_text" : "",
+    "user_id" : 2691206967,
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "xiao2024xing",
+    "fanCount" : "1.1万",
+    "principalId" : "xiao2024xing",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xka2xdtm25wu3a",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/08/30/09/BMjAyNTA4MzAwOTU5MzBfMTQ4MjY0MjM5OF8yX2hkNTI3XzExNA==_s.jpg",
+    "user_sex" : "F",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/08/30/09/BMjAyNTA4MzAwOTU5MzBfMTQ4MjY0MjM5OF8yX2hkNTI3XzExNA==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2025/08/30/09/BMjAyNTA4MzAwOTU5MzBfMTQ4MjY0MjM5OF8yX2hkNTI3XzExNA==_s.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "晓宝。",
+    "user_text" : "🍾你肯定会觉得认识我是一件很棒的事\n \n\n直播时间：早晨9点左右。晚上7点左右。",
+    "user_id" : 1482642398,
+    "isFavorited" : false
+  }, {
+    "fanCount" : "31.1万",
+    "principalId" : "3xubfmg97i7dnse",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xubfmg97i7dnse",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2023/01/11/13/BMjAyMzAxMTExMzE2MzRfMjU3NTk2Mzc5XzFfaGQzNzNfNDk3_s.jpg",
+    "user_sex" : "U",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2023/01/11/13/BMjAyMzAxMTExMzE2MzRfMjU3NTk2Mzc5XzFfaGQzNzNfNDk3_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2023/01/11/13/BMjAyMzAxMTExMzE2MzRfMjU3NTk2Mzc5XzFfaGQzNzNfNDk3_s.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "火球&狐狸",
+    "user_text" : "直播间同款商品在小店橱窗哦宝子未成年禁止刷礼物\n全新原创单曲《我是你的老北鼻》网易云已上线\n原创单曲《致宝子》网易云已上线\n《天生反骨的鸵鸟》火球&狐狸改编版网易云已上线",
+    "user_id" : 257596379,
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "qingkongwanli13",
+    "fanCount" : "17.9万",
+    "principalId" : "qingkongwanli13",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xf6ktzg2pt2bvm",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2021/11/11/18/BMjAyMTExMTExODUyMzJfOTAzMjU0ODg0XzFfaGQ3MTFfNzYz_s.jpg",
+    "user_sex" : "M",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2021/11/11/18/BMjAyMTExMTExODUyMzJfOTAzMjU0ODg0XzFfaGQ3MTFfNzYz_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2021/11/11/18/BMjAyMTExMTExODUyMzJfOTAzMjU0ODg0XzFfaGQ3MTFfNzYz_s.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "东东PUBG",
+    "user_text" : "直播时间晚上八点\n   助理:dong145246备注来意 请假会在粉丝群通知！",
+    "user_id" : 903254884,
+    "isFavorited" : false
+  }, {
+    "fanCount" : "10.7万",
+    "principalId" : "3xmqxzfth38g75e",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3xmqxzfth38g75e",
+    "headurl" : "https://p4-pro.a.yximgs.com/uhead/AB/2024/12/04/16/BMjAyNDEyMDQxNjQzNTdfNjk1ODQzNzUxXzFfaGQ1NzhfNzM3_s.jpg",
+    "user_sex" : "M",
+    "headurls" : [ {
+      "cdn" : "p4-pro.a.yximgs.com",
+      "url" : "https://p4-pro.a.yximgs.com/uhead/AB/2024/12/04/16/BMjAyNDEyMDQxNjQzNTdfNjk1ODQzNzUxXzFfaGQ1NzhfNzM3_s.jpg"
+    }, {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/12/04/16/BMjAyNDEyMDQxNjQzNTdfNjk1ODQzNzUxXzFfaGQ1NzhfNzM3_s.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "弹幕-四哥",
+    "user_text" : "🔥寒门出身无良方 一生输赢全靠拼\n🔥每日开播时间：\n🔥私人🌍jiaolong8888888",
+    "user_id" : 695843751,
+    "isFavorited" : false
+  }, {
+    "fanCount" : "108.4万",
+    "principalId" : "3x7rsqh3puf65t9",
+    "live" : false,
+    "verified" : false,
+    "following" : false,
+    "eid" : "3x7rsqh3puf65t9",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2020/07/11/08/BMjAyMDA3MTEwODIyMzJfNDcxNzIxMzdfMV9oZDk2XzI3NA==_s.jpg",
+    "user_sex" : "F",
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2020/07/11/08/BMjAyMDA3MTEwODIyMzJfNDcxNzIxMzdfMV9oZDk2XzI3NA==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2020/07/11/08/BMjAyMDA3MTEwODIyMzJfNDcxNzIxMzdfMV9oZDk2XzI3NA==_s.jpg"
+    } ],
+    "visitorBeFollowed" : false,
+    "user_name" : "皓妈吖（震家人528）",
+    "user_text" : "感谢快手官方\n感谢一路同行的你们\n感谢每个在我生命里出现的人\n每天早上六点半，晚上8点直播",
+    "user_id" : 47172137,
+    "isFavorited" : false
+  } ]
+}, {
+  "id" : 1000024,
+  "name" : "其他",
+  "categoryType" : 0,
+  "authorList" : [ {
+    "fanCount" : "19.6万",
+    "principalId" : "3xzszgittun2nvw",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3xzszgittun2nvw",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p4-pro.a.yximgs.com",
+      "url" : "https://p4-pro.a.yximgs.com/uhead/AB/2024/04/02/15/BMjAyNDA0MDIxNTE5NDdfNDA3MDEyMTIwNl8yX2hkNDE0XzkwNw==_s.jpg"
+    }, {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2024/04/02/15/BMjAyNDA0MDIxNTE5NDdfNDA3MDEyMTIwNl8yX2hkNDE0XzkwNw==_s.jpg"
+    } ],
+    "user_name" : "糖糖剧场",
+    "user_id" : 4070121206,
+    "user_text" : "感谢快手官方给予这么好的平台😃\n感谢所有粉丝的支持🥰\n每天直播更新不同的剧\n关注主播不迷路😘\n喜欢的老铁点个关注吧😜\n收学圆，思❤️\n一对一教学🤝",
+    "headurl" : "https://p4-pro.a.yximgs.com/uhead/AB/2024/04/02/15/BMjAyNDA0MDIxNTE5NDdfNDA3MDEyMTIwNl8yX2hkNDE0XzkwNw==_s.jpg",
+    "user_sex" : "M",
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "hw66-666",
+    "fanCount" : "121.5万",
+    "principalId" : "hw66-666",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3xjx92ic76ti6hk",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/11/28/22/BMjAyNTExMjgyMjUzNTRfMTU2NDA4MTcwOF8xX2hkNzIxXzM4Mg==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2025/11/28/22/BMjAyNTExMjgyMjUzNTRfMTU2NDA4MTcwOF8xX2hkNzIxXzM4Mg==_s.jpg"
+    } ],
+    "user_name" : "牡丹姐 每天早上6点直播",
+    "user_id" : 1564081708,
+    "user_text" : "❤️  专业调解婚姻、婆媳、家庭矛盾18年…\n\n❤️ 言辞犀利 一针见血 直击问题本质 \n\n❤️为一切不公发声 正义公道\n\n❤️  每天早上6:00点准时开播：（关注并预约）\n\n❤️  感恩快手平台给我这个展示自己的机会!\n\n本人作品都是原创作品，不允许搬运，以及搬运我本人作品声音，有发现必追究法律责任！",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/11/28/22/BMjAyNTExMjgyMjUzNTRfMTU2NDA4MTcwOF8xX2hkNzIxXzM4Mg==_s.jpg",
+    "user_sex" : "F",
+    "isFavorited" : false
+  }, {
+    "fanCount" : "38.8万",
+    "principalId" : "3xp8tbb8xstfvic",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3xp8tbb8xstfvic",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p5-pro.a.yximgs.com",
+      "url" : "https://p5-pro.a.yximgs.com/uhead/AB/2023/12/16/14/BMjAyMzEyMTYxNDQ3MzBfNzczOTA2MDE0XzFfaGQ5OV83Mg==_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2023/12/16/14/BMjAyMzEyMTYxNDQ3MzBfNzczOTA2MDE0XzFfaGQ5OV83Mg==_s.jpg"
+    } ],
+    "user_name" : "装卸工五哥",
+    "user_id" : 773906014,
+    "user_text" : "分享日常生活，全网唯一账号",
+    "headurl" : "https://p5-pro.a.yximgs.com/uhead/AB/2023/12/16/14/BMjAyMzEyMTYxNDQ3MzBfNzczOTA2MDE0XzFfaGQ5OV83Mg==_s.jpg",
+    "user_sex" : "M",
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "wwen-1215",
+    "fanCount" : "155.7万",
+    "principalId" : "wwen-1215",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3x59wzqhmi5urfw",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p4-pro.a.yximgs.com",
+      "url" : "https://p4-pro.a.yximgs.com/uhead/AB/2025/04/01/18/BMjAyNTA0MDExODAxMjlfOTE1OTkyNTNfMV9oZDI4NF81MjE=_s.jpg"
+    }, {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2025/04/01/18/BMjAyNTA0MDExODAxMjlfOTE1OTkyNTNfMV9oZDI4NF81MjE=_s.jpg"
+    } ],
+    "user_name" : "仙渡美雯",
+    "user_id" : 91599253,
+    "user_text" : "公众号🔍小鹿包子🔍美雯老婆(本人回复)",
+    "headurl" : "https://p4-pro.a.yximgs.com/uhead/AB/2025/04/01/18/BMjAyNTA0MDExODAxMjlfOTE1OTkyNTNfMV9oZDI4NF81MjE=_s.jpg",
+    "user_sex" : "F",
+    "isFavorited" : false
+  }, {
+    "fanCount" : "103.7万",
+    "principalId" : "3x3rri99r5fgmei",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3x3rri99r5fgmei",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p4-pro.a.yximgs.com",
+      "url" : "https://p4-pro.a.yximgs.com/uhead/AB/2020/11/28/00/BMjAyMDExMjgwMDM3MTJfMTIwNjc5Njc2N18xX2hkNzgwXzU4Ng==_s.jpg"
+    }, {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2020/11/28/00/BMjAyMDExMjgwMDM3MTJfMTIwNjc5Njc2N18xX2hkNzgwXzU4Ng==_s.jpg"
+    } ],
+    "user_name" : "丹姐玉饰",
+    "user_id" : 1206796767,
+    "user_text" : "👥她在关注你哦\n♥️主营和田玉，翡翠，蜜蜡，彩宝\n♥️收到货第一时间查对，面单是查货的依据，一定要留好面单，我们根据面单查货\n♥️所有问题点击小黄车信息框留言！\n♥️诚邀好物厂家合作洽谈！",
+    "headurl" : "https://p4-pro.a.yximgs.com/uhead/AB/2020/11/28/00/BMjAyMDExMjgwMDM3MTJfMTIwNjc5Njc2N18xX2hkNzgwXzU4Ng==_s.jpg",
+    "user_sex" : "F",
+    "isFavorited" : false
+  }, {
+    "fanCount" : "104.6万",
+    "principalId" : "3x4ee7rnbb2y3mu",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3x4ee7rnbb2y3mu",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2023/09/26/15/BMjAyMzA5MjYxNTMwNTJfMjY5MDAxNTQwMV8yX2hkOTZfODM2_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2023/09/26/15/BMjAyMzA5MjYxNTMwNTJfMjY5MDAxNTQwMV8yX2hkOTZfODM2_s.jpg"
+    } ],
+    "user_name" : "聆听音乐分享",
+    "user_id" : 2690015401,
+    "user_text" : "🎶开心的时候听的是旋律\n🎶难过的时候听的是歌词\n🎶初听不识曲中意\n🎶再听已是曲中人\n🎶歌的海洋\n🎶花的世界\n🎶倾听歌声\n🎶聆听心声\n🎶感谢快手官方\n🎶感谢您的关注\n🎶每天分享视频音乐🎶\n🎶欢迎来到聆听音乐分享",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2023/09/26/15/BMjAyMzA5MjYxNTMwNTJfMjY5MDAxNTQwMV8yX2hkOTZfODM2_s.jpg",
+    "user_sex" : "F",
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "MX189147",
+    "fanCount" : "216万",
+    "principalId" : "MX189147",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3xnqrvcyvff64vc",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2023/03/04/15/BMjAyMzAzMDQxNTAwNTNfNjMxOTMzNzY1XzFfaGQ4MjBfNzAw_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2023/03/04/15/BMjAyMzAzMDQxNTAwNTNfNjMxOTMzNzY1XzFfaGQ4MjBfNzAw_s.jpg"
+    } ],
+    "user_name" : "飞鱼运动塑形",
+    "user_id" : 631933765,
+    "user_text" : "🙏感谢快手官方提供绿色交流平台\n🗣每天上午🌞9:00晚🌛7:30（每周六早晚、周日上午休息）运动打卡\n  提倡健康科学减脂，七分饮食➕三分运动，直播间分享正确饮食、运动方式！\n一起加油💪共同打卡，遇见更美更好的自己🥰",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2023/03/04/15/BMjAyMzAzMDQxNTAwNTNfNjMxOTMzNzY1XzFfaGQ4MjBfNzAw_s.jpg",
+    "user_sex" : "F",
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "GL19850505",
+    "fanCount" : "123.6万",
+    "principalId" : "GL19850505",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3xrhr3sp93bmgy2",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p5-pro.a.yximgs.com",
+      "url" : "https://p5-pro.a.yximgs.com/uhead/AB/2025/07/10/22/BMjAyNTA3MTAyMjExNDBfNjIwMzExMDA2XzFfaGQ5MzRfNjQy_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2025/07/10/22/BMjAyNTA3MTAyMjExNDBfNjIwMzExMDA2XzFfaGQ5MzRfNjQy_s.jpg"
+    } ],
+    "user_name" : "高亮（729）",
+    "user_id" : 620311006,
+    "user_text" : "老大:  马宏龙      董事长：大图图\n 每天下午2:00直播  娱乐狠PK\n既是兵也是将，记住我名叫高亮",
+    "headurl" : "https://p5-pro.a.yximgs.com/uhead/AB/2025/07/10/22/BMjAyNTA3MTAyMjExNDBfNjIwMzExMDA2XzFfaGQ5MzRfNjQy_s.jpg",
+    "user_sex" : "M",
+    "isFavorited" : false
+  }, {
+    "fanCount" : "11.4万",
+    "principalId" : "3xt6gt2e8tyjsvw",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3xt6gt2e8tyjsvw",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p5-pro.a.yximgs.com",
+      "url" : "https://p5-pro.a.yximgs.com/uhead/AB/2021/09/09/05/BMjAyMTA5MDkwNTI5MTdfMTczNDY5MzExXzJfaGQyODhfOTM5_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2021/09/09/05/BMjAyMTA5MDkwNTI5MTdfMTczNDY5MzExXzJfaGQyODhfOTM5_s.jpg"
+    } ],
+    "user_name" : "东哥？！",
+    "user_id" : 173469311,
+    "user_text" : "想吃好大米稻花香2号，长粒香，中科发5自家种植，现磨现卖，不抛光打腊，没有科技狠活，真空礼盒包装都有，价格便宜v19244679186",
+    "headurl" : "https://p5-pro.a.yximgs.com/uhead/AB/2021/09/09/05/BMjAyMTA5MDkwNTI5MTdfMTczNDY5MzExXzJfaGQyODhfOTM5_s.jpg",
+    "user_sex" : "M",
+    "isFavorited" : false
+  }, {
+    "kwaiId" : "qq800130",
+    "fanCount" : "101.7万",
+    "principalId" : "qq800130",
+    "live" : false,
+    "following" : false,
+    "verified" : false,
+    "eid" : "3x2ybgzj63j4xue",
+    "visitorBeFollowed" : false,
+    "headurls" : [ {
+      "cdn" : "p2-pro.a.yximgs.com",
+      "url" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/03/15/20/BMjAyNjAzMTUyMDMzMzVfNzczOTg1MDM5XzFfaGQyNTBfODM1_s.jpg"
+    }, {
+      "cdn" : "p1-pro.a.yximgs.com",
+      "url" : "https://p1-pro.a.yximgs.com/uhead/AB/2026/03/15/20/BMjAyNjAzMTUyMDMzMzVfNzczOTg1MDM5XzFfaGQyNTBfODM1_s.jpg"
+    } ],
+    "user_name" : "女版济公红妹和爱犬",
+    "user_id" : 773985039,
+    "user_text" : "自己独自徒步西藏318路线。带大家一起看风景。欢迎大家一起见证",
+    "headurl" : "https://p2-pro.a.yximgs.com/uhead/AB/2026/03/15/20/BMjAyNjAzMTUyMDMzMzVfNzczOTg1MDM5XzFfaGQyNTBfODM1_s.jpg",
+    "user_sex" : "F",
+    "isFavorited" : false
+  } ]
+} ]

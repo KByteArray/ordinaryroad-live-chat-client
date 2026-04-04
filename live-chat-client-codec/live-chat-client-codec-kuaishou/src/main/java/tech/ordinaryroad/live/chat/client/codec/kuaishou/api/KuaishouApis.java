@@ -31,15 +31,17 @@ import cn.hutool.core.util.ReUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.core.util.URLUtil;
 import cn.hutool.http.*;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import lombok.*;
+import lombok.extern.slf4j.Slf4j;
 import tech.ordinaryroad.live.chat.client.codec.kuaishou.constant.RoomInfoGetTypeEnum;
 import tech.ordinaryroad.live.chat.client.codec.kuaishou.msg.KuaishouGiftMsg;
 import tech.ordinaryroad.live.chat.client.codec.kuaishou.protobuf.LiveAudienceStateOuterClass;
 import tech.ordinaryroad.live.chat.client.codec.kuaishou.protobuf.WebGiftFeedOuterClass;
+import tech.ordinaryroad.live.chat.client.codec.kuaishou.resp.InterestMaskListResponse;
+import tech.ordinaryroad.live.chat.client.codec.kuaishou.resp.KuaishouUserInfoResponse;
 import tech.ordinaryroad.live.chat.client.codec.kuaishou.room.KuaishouRoomInitResult;
 import tech.ordinaryroad.live.chat.client.commons.base.exception.BaseException;
 import tech.ordinaryroad.live.chat.client.commons.util.OrJacksonUtil;
@@ -51,23 +53,56 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 快手直播API工具类
+ * 
+ * <p>该类封装了快手直播平台的各种API接口，包括直播间初始化、用户信息获取、礼物系统、互动功能等。</p>
+ * 
+ * <p>主要功能：</p>
+ * <ul>
+ *   <li>直播间初始化：获取直播间信息、WebSocket连接信息</li>
+ *   <li>用户信息获取：获取用户基本信息</li>
+ *   <li>礼物系统：获取礼物列表和礼物信息</li>
+ *   <li>互动功能：发送评论、点赞等</li>
+ *   <li>兴趣面具：获取兴趣面具列表</li>
+ * </ul>
+ * 
  * @author mjz
  * @date 2024/1/5
  */
+@Slf4j
 public class KuaishouApis {
 
     /**
-     * 接口返回结果缓存
+     * 接口返回结果缓存，缓存时间为1天
      * {@link #KEY_RESULT_CACHE_GIFT_ITEMS}：所有礼物信息
      */
     public static final TimedCache<String, Map<String, GiftInfo>> RESULT_CACHE = new TimedCache<>(TimeUnit.DAYS.toMillis(1));
-    public static final String KEY_RESULT_CACHE_GIFT_ITEMS = "GIFT_ITEMS";
-    public static final String PATTERN_LIVE_ROOM_DETAIL = "\"playList\":\\s*\\[([\\s\\S]*?)\\](?=,\\s*\"loading\"|$)";
+    
     /**
-     * 礼物连击缓存
+     * 礼物信息缓存键
+     */
+    public static final String KEY_RESULT_CACHE_GIFT_ITEMS = "GIFT_ITEMS";
+    
+    /**
+     * 直播间详情JSON中播放列表的正则表达式模式
+     */
+    public static final String PATTERN_LIVE_ROOM_DETAIL = "\"playList\":\\s*\\[([\\s\\S]*?)\\](?=,\\s*\"loading\"|$)";
+    
+    /**
+     * 礼物连击缓存，缓存时间为5分钟
      */
     private static final TimedCache<String, WebGiftFeedOuterClass.WebGiftFeed> WEB_GIFT_FEED_CACHE = new TimedCache<>(300 * 1000L, new ConcurrentHashMap<>());
 
+
+    /**
+     * 使用Cookie初始化直播间信息
+     * 
+     * @param roomId 房间ID
+     * @param cookie Cookie信息
+     * @param kww Kww参数
+     * @param roomInitResult 可选的房间初始化结果对象，如果为null则创建新对象
+     * @return 房间初始化结果
+     */
     public static KuaishouRoomInitResult roomInitSetCookie(Object roomId, String cookie, String kww, KuaishouRoomInitResult roomInitResult) {
         // KuaishouUserInfoResponse kuaishouUserInfoResponse = userInfo(cookie, kww);
 
@@ -120,10 +155,29 @@ public class KuaishouApis {
         return roomInitResult;
     }
 
+    /**
+     * 使用Cookie初始化直播间信息（简化版本）
+     * 
+     * @param roomId 房间ID
+     * @param cookie Cookie信息
+     * @param kww Kww参数
+     * @return 房间初始化结果
+     */
     public static KuaishouRoomInitResult roomInitSetCookie(Object roomId, String cookie, String kww) {
         return roomInitSetCookie(roomId, cookie, kww, null);
     }
 
+
+    /**
+     * 根据获取类型初始化直播间信息
+     * 
+     * @param roomId 房间ID
+     * @param roomInfoGetType 房间信息获取类型枚举
+     * @param cookie Cookie信息
+     * @param kww Kww参数
+     * @param roomInitResult 可选的房间初始化结果对象
+     * @return 房间初始化结果
+     */
     public static KuaishouRoomInitResult roomInit(Object roomId, RoomInfoGetTypeEnum roomInfoGetType, String cookie, String kww, KuaishouRoomInitResult roomInitResult) {
         switch (roomInfoGetType) {
             case COOKIE: {
@@ -139,11 +193,29 @@ public class KuaishouApis {
         }
     }
 
+
+    /**
+     * 根据获取类型初始化直播间信息（简化版本）
+     * 
+     * @param roomId 房间ID
+     * @param roomInfoGetType 房间信息获取类型枚举
+     * @param cookie Cookie信息
+     * @param kww Kww参数
+     * @return 房间初始化结果
+     */
     public static KuaishouRoomInitResult roomInit(Object roomId, RoomInfoGetTypeEnum roomInfoGetType, String cookie, String kww) {
         return roomInit(roomId, roomInfoGetType, cookie, kww, null);
     }
 
     // region KuaishouRoomInitResult NOT_COOKIE
+    
+    /**
+     * 不使用Cookie获取房间初始化信息
+     * 
+     * @param roomId 房间ID
+     * @param roomInitResult 可选的房间初始化结果对象
+     * @return 房间初始化结果
+     */
     public static KuaishouRoomInitResult roomInitGet(Object roomId, KuaishouRoomInitResult roomInitResult) {
         @Cleanup
         HttpResponse response = createGetRequest("https://live.kuaishou.com/live_api/liveroom/livedetail?principalId=" + roomId, StrUtil.EMPTY)
@@ -173,20 +245,52 @@ public class KuaishouApis {
         return roomInitResult;
     }
 
+
+    /**
+     * 不使用Cookie获取房间初始化信息（简化版本）
+     * 
+     * @param roomId 房间ID
+     * @return 房间初始化结果
+     */
     public static KuaishouRoomInitResult roomInitGet(Object roomId) {
         return roomInitGet(roomId, null);
     }
 
 
+
+    /**
+     * 默认方式初始化直播间信息（不使用Cookie）
+     * 
+     * @param roomId 房间ID
+     * @return 房间初始化结果
+     */
     public static KuaishouRoomInitResult roomInit(Object roomId) {
         return roomInit(roomId, RoomInfoGetTypeEnum.NOT_COOKIE, null, null);
     }
 
+
+    /**
+     * 默认方式初始化直播间信息（不使用Cookie），可传入现有结果对象
+     * 
+     * @param roomId 房间ID
+     * @param roomInitResult 房间初始化结果对象
+     * @return 房间初始化结果
+     */
     public static KuaishouRoomInitResult roomInit(Object roomId, KuaishouRoomInitResult roomInitResult) {
         return roomInit(roomId, RoomInfoGetTypeEnum.NOT_COOKIE, null, null, roomInitResult);
     }
     // endregion
 
+
+    /**
+     * 获取WebSocket连接信息
+     * 
+     * @param roomId 房间ID
+     * @param liveStreamId 直播流ID
+     * @param cookie Cookie信息
+     * @param kww Kww参数
+     * @return WebSocket连接信息的JSON响应
+     */
     public static JsonNode websocketinfo(Object roomId, String liveStreamId, String cookie, String kww) {
         if (StrUtil.isBlank(liveStreamId)) {
             throwExceptionWithTip("主播未开播，liveStreamId为空");
@@ -199,6 +303,14 @@ public class KuaishouApis {
         return responseInterceptor(response.body());
     }
 
+
+
+
+    /**
+     * 获取所有礼物信息
+     * 
+     * @return 礼物ID到礼物信息的映射
+     */
     public static Map<String, GiftInfo> allgifts() {
         Map<String, GiftInfo> map = new HashMap<>();
         @Cleanup
@@ -221,6 +333,19 @@ public class KuaishouApis {
         return RESULT_CACHE.get(KEY_RESULT_CACHE_GIFT_ITEMS).get(id);
     }
 
+
+
+
+
+    /**
+     * 发送评论
+     * 
+     * @param cookie Cookie信息
+     * @param kww Kww参数
+     * @param roomId 房间ID
+     * @param request 发送评论请求对象
+     * @return 发送结果的JSON响应
+     */
     @SneakyThrows
     public static JsonNode sendComment(String cookie, String kww, Object roomId, SendCommentRequest request) {
         @Cleanup
@@ -233,6 +358,20 @@ public class KuaishouApis {
         return responseInterceptor(response.body());
     }
 
+
+
+
+
+    /**
+     * 点赞
+     * 
+     * @param cookie Cookie信息
+     * @param kww Kww参数
+     * @param roomId 房间ID
+     * @param liveStreamId 直播流ID
+     * @param count 点赞次数
+     * @return 点赞结果的JSON响应
+     */
     @SneakyThrows
     public static JsonNode clickLike(String cookie, String kww, Object roomId, String liveStreamId, int count) {
         @Cleanup
@@ -249,21 +388,47 @@ public class KuaishouApis {
         return responseInterceptor(response.body());
     }
 
+
+    /**
+     * 创建HTTP请求
+     * 
+     * @param method HTTP方法
+     * @param url 请求URL
+     * @param cookie Cookie信息
+     * @return HTTP请求对象
+     */
     public static HttpRequest createRequest(Method method, String url, String cookie) {
         return OrLiveChatHttpUtil.createRequest(method, url)
                 .cookie(cookie)
                 .header(Header.HOST, URLUtil.url(url).getHost());
     }
 
+
+    /**
+     * 创建GET请求
+     * 
+     * @param url 请求URL
+     * @param cookie Cookie信息
+     * @return GET请求对象
+     */
     public static HttpRequest createGetRequest(String url, String cookie) {
         return createRequest(Method.GET, url, cookie);
     }
 
+
+    /**
+     * 创建POST请求
+     * 
+     * @param url 请求URL
+     * @param cookie Cookie信息
+     * @return POST请求对象
+     */
     public static HttpRequest createPostRequest(String url, String cookie) {
         return createRequest(Method.POST, url, cookie);
     }
 
     private static JsonNode responseInterceptor(String responseString) {
+        log.info("responseString: {}", responseString);
         try {
             JsonNode jsonNode = OrJacksonUtil.getInstance().readTree(responseString);
             JsonNode data = jsonNode.required("data");
@@ -363,100 +528,126 @@ public class KuaishouApis {
         return badgeLevel;
     }
 
+
+    /**
+     * 获取用户信息
+     * 
+     * @param cookie Cookie信息
+     * @param kww Kww参数
+     * @return 用户信息响应对象
+     */
     @SneakyThrows
     public static KuaishouUserInfoResponse userInfo(String cookie, String kww) {
         @Cleanup
         HttpResponse response = createPostRequest("https://live.kuaishou.com/live_api/baseuser/userinfo", cookie)
-                .body(OrJacksonUtil.getInstance().createObjectNode().toString(), ContentType.JSON.getValue())
+                .body("{}", ContentType.JSON.getValue()) // 发送空JSON对象
+                .header("Accept", "application/json, text/plain, */*")
+                .header("Accept-Encoding", "gzip, deflate, br, zstd")
+                .header("Accept-Language", "en,zh-CN;q=0.9,zh;q=0.8,en-GB;q=0.7,en-US;q=0.6")
+                .header("baggage", "sentry-environment=prod,sentry-release=80c170a")
+                .header("Connection", "keep-alive")
+                .header("Content-Type", "application/json")
                 .header(Header.ORIGIN, "https://live.kuaishou.com")
                 .header(Header.REFERER, "https://live.kuaishou.com/")
-                .header("Kww", kww)
+                .header("kww", kww)
+                .header("sec-ch-ua", "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Microsoft Edge\";v=\"146\"")
+                .header("sec-ch-ua-mobile", "?0")
+                .header("sec-ch-ua-platform", "\"Windows\"")
+                .header("Sec-Fetch-Dest", "empty")
+                .header("Sec-Fetch-Mode", "cors")
+                .header("Sec-Fetch-Site", "same-origin")
+                .header("sentry-trace", "1b50c275963146e48c1db279e4044cb4-ba9c580d12c7cadd-0")
+                .header(Header.USER_AGENT, "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0")
                 .execute();
         JsonNode jsonNode = responseInterceptor(response.body());
-        return OrJacksonUtil.getInstance().readValue(jsonNode.toString(), KuaishouUserInfoResponse.class);
+        String json = jsonNode.toString();
+        // 使用Gson进行JSON转换
+        com.google.gson.Gson gson = new com.google.gson.Gson();
+        return gson.fromJson(json, KuaishouUserInfoResponse.class);
     }
 
+    /**
+     * 获取兴趣面具列表
+     *
+     * @param cookie Cookie信息
+     * @param kww Kww参数
+     * @return 兴趣面具列表的JSON响应
+     */
+    @SneakyThrows
+    public static JsonNode interestMaskList(String cookie, String kww) {
+        @Cleanup
+        HttpResponse response = createGetRequest("https://live.kuaishou.com/live_api/interestMask/list", cookie)
+                .header("Accept", "application/json, text/plain, */*")
+                .header("Accept-Encoding", "gzip, deflate, br")
+                .header("Accept-Language", "en,zh-CN;q=0.9,zh;q=0.8,en-GB;q=0.7,en-US;q=0.6")
+                .header("baggage", "sentry-environment=prod,sentry-release=80c170a")
+                .header("Connection", "keep-alive")
+                .header(Header.ORIGIN, "https://live.kuaishou.com")
+                .header(Header.REFERER, "https://live.kuaishou.com/")
+                .header("kww", kww)
+                .header("sec-ch-ua", "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Microsoft Edge\";v=\"146\"")
+                .header("sec-ch-ua-mobile", "?0")
+                .header("sec-ch-ua-platform", "\"Windows\"")
+                .header("Sec-Fetch-Dest", "empty")
+                .header("Sec-Fetch-Mode", "cors")
+                .header("Sec-Fetch-Site", "same-origin")
+                .header("sentry-trace", "1b50c275963146e48c1db279e4044cb4-ba42c04eb4afeacf-0")
+                .header(Header.USER_AGENT, "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0")
+                .execute();
+        return responseInterceptor(response.body());
+    }
+
+    /**
+     * 获取兴趣面具列表并转换为Java对象
+     *
+     * @param cookie Cookie信息
+     * @param kww Kww参数
+     * @return 兴趣面具列表的Java对象响应数组
+     */
+    @SneakyThrows
+    public static List<InterestMaskListResponse> interestMaskListResponse(String cookie, String kww) {
+        JsonNode jsonNode = interestMaskList(cookie, kww);
+        String json = jsonNode.toString();
+        // 使用Gson进行JSON转换，支持数组格式
+        com.google.gson.Gson gson = new com.google.gson.Gson();
+        java.lang.reflect.Type listType = new com.google.gson.reflect.TypeToken<List<InterestMaskListResponse>>(){}.getType();
+        return gson.fromJson(json, listType);
+
+    }
+
+    /**
+     * 发送评论请求对象
+     */
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
     @Builder
     public static class SendCommentRequest {
+        /** 直播流ID */
         private String liveStreamId;
+        /** 评论内容 */
         private String content;
+        /** 评论颜色 */
         private String color;
     }
 
+    /**
+     * 礼物信息对象
+     */
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
     public static class GiftInfo {
+        /** 礼物名称 */
         private String giftName;
+        /** 礼物图片URL */
         private String giftUrl;
     }
 
-    @Data
-    @AllArgsConstructor
-    @NoArgsConstructor
-    public static class KuaishouUserInfoResponse {
-        private OwnerInfo ownerInfo;
-        private KshellBalance kshellBalance;
-    }
 
-    @Data
-    public static class OwnerInfo {
-        private String id;
-        private String name;
-        private String description;
-        private String avatar;
-        private String sex;
-        private String constellation;
-        private String cityName;
-        private Long originUserId;
-        private Boolean privacy;
-        private Boolean isNew;
-        private Long timestamp;
-        private VerifiedStatus verifiedStatus;
-        private BannedStatus bannedStatus;
-        private Counts counts;
-        private Boolean isAdult;
-    }
 
-    @Data
-    public static class VerifiedStatus {
-        private Boolean verified;
-        private String description;
-        private Integer type;
-        @JsonProperty("new")
-        private Boolean isNew;
-    }
 
-    @Data
-    public static class BannedStatus {
-        private Boolean banned;
-        private Boolean socialBanned;
-        private Boolean isolate;
-        private Boolean defriend;
-    }
 
-    @Data
-    public static class Counts {
-        private String fan; // 注意：JSON中是字符串类型
-        private String follow;
-        private Integer photo;
-        private Integer playback;
-        private Integer liked;
-        @JsonProperty("private")
-        private Integer privateCount;
-        private Integer review;
-        private Integer open;
-    }
 
-    @Data
-    public static class KshellBalance {
-        private Integer result;
-        private Integer kshell;
 
-        @JsonProperty("host-name") // 处理带连字符的字段名
-        private String hostName;
-    }
 }

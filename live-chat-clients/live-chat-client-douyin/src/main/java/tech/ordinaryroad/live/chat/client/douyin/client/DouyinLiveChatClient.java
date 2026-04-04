@@ -207,11 +207,47 @@ public class DouyinLiveChatClient extends BaseNettyClient<DouyinLiveChatClientCo
         super.sendDanmu(danmu, success, failed);
     }
 
+    /**
+     * 生成抖音直播WebSocket连接的签名
+     * 
+     * <p>抖音直播协议使用复杂的签名机制来验证请求的合法性，该方法通过以下步骤生成签名：</p>
+     * 
+     * <ol>
+     *   <li>创建JavaScript执行环境，模拟浏览器环境</li>
+     *   <li>构建签名参数字符串，包含直播相关的各种参数</li>
+     *   <li>对参数字符串进行MD5哈希计算</li>
+     *   <li>调用JavaScript SDK中的加密函数对MD5值进行二次加密</li>
+     * </ol>
+     * 
+     * <p>签名参数说明：</p>
+     * <ul>
+     *   <li>live_id: 直播ID，固定为1</li>
+     *   <li>aid: 应用ID，固定为6383（抖音Web端）</li>
+     *   <li>version_code: 版本号，从配置获取</li>
+     *   <li>webcast_sdk_version: Web直播SDK版本，从配置获取</li>
+     *   <li>room_id: 直播间ID</li>
+     *   <li>user_unique_id: 用户唯一标识</li>
+     *   <li>device_platform: 设备平台，固定为web</li>
+     *   <li>identity: 身份标识，固定为audience（观众）</li>
+     * </ul>
+     * 
+     * @param userAgent 用户代理字符串，用于模拟浏览器环境
+     * @param roomId 直播间ID
+     * @param userUniqueId 用户唯一标识
+     * @return 生成的签名字符串
+     */
     @SneakyThrows
     public String getSignature(String userAgent, long roomId, String userUniqueId) {
+        // 1. 创建JavaScript执行环境，模拟浏览器环境
+        // 设置document、window、navigator等全局对象，确保JavaScript SDK能正常执行
         String JS_ENV = " document = {};\nwindow = {};\nnavigator = {\nuserAgent: '" + userAgent + "'\n};\n";
         ScriptEngine scriptEngine = OrJavaScriptUtil.createScriptEngine();
+        
+        // 加载JavaScript SDK（JS_SDK是包含加密算法的JavaScript代码）
         scriptEngine.eval(JS_ENV + JS_SDK);
+        
+        // 2. 构建签名参数字符串
+        // 按照抖音协议的格式拼接参数，参数顺序和格式都有严格要求
         String signPram = ("live_id=1,aid=6383," +
                 "version_code=$version_code$," +
                 "webcast_sdk_version=$webcast_sdk_version$," +
@@ -223,12 +259,18 @@ public class DouyinLiveChatClient extends BaseNettyClient<DouyinLiveChatClientCo
                 .replace("$version_code$", getConfig().getVersionCode())
                 .replace("$roomId$", String.valueOf(roomId))
                 .replace("$userId$", userUniqueId);
+        
+        // 3. 对参数字符串进行MD5哈希计算
+        // 这是签名的第一步加密，确保参数完整性
         String md5Hex = DigestUtil.md5Hex(signPram.getBytes(StandardCharsets.UTF_8));
+        
         try {
+            // 4. 调用JavaScript SDK中的get_sign函数进行二次加密
+            // JavaScript SDK中包含抖音特有的加密算法，这是签名的核心部分
             Object eval = scriptEngine.eval("get_sign('" + md5Hex + "')");
             return eval.toString();
         } catch (Exception e) {
-            throw new BaseException("Execution failed: getSignature", e);
+            throw new BaseException("签名生成失败: getSignature", e);
         }
     }
 }

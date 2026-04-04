@@ -60,6 +60,7 @@
         <module>live-chat-client-codec</module>
         <module>live-chat-client-plugins</module>
         <module>live-chat-clients</module>
+        <module>live-chat-client-examples</module>
     </modules>
 
     <properties>
@@ -193,7 +194,11 @@
                 <artifactId>live-chat-client-codec-kuaishou</artifactId>
                 <version>1.5.8</version>
             </dependency>
-
+            <dependency>
+                <groupId>tech.ordinaryroad</groupId>
+                <artifactId>live-chat-client-examples</artifactId>
+                <version>1.5.8</version>
+            </dependency>
             <dependency>
                 <groupId>tech.ordinaryroad</groupId>
                 <artifactId>live-chat-client-plugin-forward</artifactId>
@@ -222,6 +227,12 @@
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
                 <version>${jackson-databind.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>2.10.1</version>
             </dependency>
 
             <dependency>
