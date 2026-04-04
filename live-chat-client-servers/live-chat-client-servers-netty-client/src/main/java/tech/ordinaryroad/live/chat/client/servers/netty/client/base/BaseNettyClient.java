@@ -167,6 +167,7 @@ public abstract class BaseNettyClient
         }
 
         String webSocketUriString = getWebSocketUriString();
+        log.info("WebSocket地址：{}", webSocketUriString);
         if (StrUtil.isEmpty(webSocketUriString)) {
             _connectFailed(failed, new BaseException("WebSocket地址为空"));
             return;
