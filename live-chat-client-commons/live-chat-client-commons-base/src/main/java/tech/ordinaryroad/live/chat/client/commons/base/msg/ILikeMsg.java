@@ -25,6 +25,9 @@
 package tech.ordinaryroad.live.chat.client.commons.base.msg;
 
 /**
+ * 点赞消息通用接口。
+ * 记录用户在直播间执行的点赞（Like/Click）行为及其次数。
+ *
  * @author mjz
  * @date 2024/1/31
  * @since 0.2.0
@@ -32,38 +35,50 @@ package tech.ordinaryroad.live.chat.client.commons.base.msg;
 public interface ILikeMsg extends IMsg {
 
     /**
-     * 粉丝牌名称
+     * 获取点赞者的粉丝牌名称
+     *
+     * @return 粉丝牌名称，默认返回空字符串
      */
     default String getBadgeName(){
         return "";
     }
 
     /**
-     * 粉丝牌等级
+     * 获取点赞者的粉丝牌等级
+     *
+     * @return 粉丝牌等级，默认返回 0
      */
     default byte getBadgeLevel(){
         return 0;
     }
 
     /**
-     * 点赞者id
+     * 获取点赞用户的 UID
+     *
+     * @return 用户 UID
      */
     String getUid();
 
     /**
-     * 点赞者用户名
+     * 获取点赞用户的用户名
+     *
+     * @return 用户名
      */
     String getUsername();
 
     /**
-     * 点赞者头像地址
+     * 获取点赞用户的头像地址
+     *
+     * @return 用户头像 URL
      */
     default String getUserAvatar() {
         return null;
     }
 
     /**
-     * 点赞数
+     * 获取本次点赞的数量（部分平台支持连点，此字段表示连点次数）
+     *
+     * @return 点赞次数，默认为 1
      */
     default int getClickCount() {
         return 1;

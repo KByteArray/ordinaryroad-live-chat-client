@@ -25,7 +25,9 @@
 package tech.ordinaryroad.live.chat.client.commons.base.msg;
 
 /**
- * 醒目留言
+ * 醒目留言（Super Chat / SC）通用接口。
+ * 是一种特殊的长驻弹幕，通常伴随着金额捐赠，会在直播界面上停留一定时间。
+ * 继承自 IDanmuMsg。
  *
  * @author mjz
  * @date 2023/9/22
@@ -33,15 +35,27 @@ package tech.ordinaryroad.live.chat.client.commons.base.msg;
 public interface ISuperChatMsg extends IDanmuMsg {
 
     /**
-     * 醒目留言持续时间，单位秒
+     * 获取醒目留言在屏幕上展示的持续时长，单位：秒（s）
+     *
+     * @return 持续时间秒数
      */
     int getDuration();
 
+    /**
+     * 获取粉丝牌名称（可选）
+     *
+     * @return 默认返回空字符串
+     */
     @Override
     default String getBadgeName() {
         return "";
     }
 
+    /**
+     * 获取粉丝牌等级（可选）
+     *
+     * @return 默认返回 0
+     */
     @Override
     default byte getBadgeLevel() {
         return 0;

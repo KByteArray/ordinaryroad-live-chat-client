@@ -25,34 +25,46 @@
 package tech.ordinaryroad.live.chat.client.commons.base.msg;
 
 /**
+ * 弹幕消息通用接口。
+ * 提供获取发送者信息（ID、用户名、头像）、粉丝牌状态以及弹幕内容的方法。
+ *
  * @author mjz
  * @date 2023/9/8
  */
 public interface IDanmuMsg extends IMsg {
 
     /**
-     * 粉丝牌名称
+     * 获取粉丝牌名称
+     *
+     * @return 粉丝牌名称，若无则返回空字符串或 null
      */
     String getBadgeName();
 
     /**
-     * 粉丝牌等级
+     * 获取粉丝牌等级
+     *
+     * @return 粉丝牌等级，通常为 0-100 的数值
      */
     byte getBadgeLevel();
 
     /**
-     * 弹幕发送者id
+     * 获取弹幕发送者的唯一标识 (UID)
+     *
+     * @return 发送者 UID
      */
     String getUid();
 
     /**
-     * 弹幕发送者用户名
+     * 获取弹幕发送者的用户名
+     *
+     * @return 用户名
      */
     String getUsername();
 
     /**
-     * 弹幕发送者头像地址
+     * 获取弹幕发送者的头像地址
      *
+     * @return 头像 URL
      * @since 0.0.11
      */
     default String getUserAvatar() {
@@ -60,7 +72,9 @@ public interface IDanmuMsg extends IMsg {
     }
 
     /**
-     * 弹幕内容
+     * 获取弹幕的具体文本内容
+     *
+     * @return 弹幕内容
      */
     String getContent();
 

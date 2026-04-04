@@ -27,7 +27,8 @@ package tech.ordinaryroad.live.chat.client.commons.base.msg;
 import tech.ordinaryroad.live.chat.client.commons.base.constant.SocialActionEnum;
 
 /**
- * 社交消息
+ * 社交行为消息通用接口。
+ * 包含用户执行的具体社交动作（如关注、分享直播间等）。
  *
  * @author mjz
  * @date 2024/5/9
@@ -36,28 +37,37 @@ import tech.ordinaryroad.live.chat.client.commons.base.constant.SocialActionEnum
 public interface ISocialMsg extends IMsg {
 
     /**
-     * 粉丝牌名称
+     * 获取执行者粉丝牌名称
+     *
+     * @return 粉丝牌名称
      */
     String getBadgeName();
 
     /**
-     * 粉丝牌等级
+     * 获取执行者粉丝牌等级
+     *
+     * @return 粉丝牌等级
      */
     byte getBadgeLevel();
 
     /**
-     * 弹幕发送者id
+     * 获取社交动作触发者的 UID
+     *
+     * @return 用户 UID
      */
     String getUid();
 
     /**
-     * 弹幕发送者用户名
+     * 获取社交动作触发者的用户名
+     *
+     * @return 用户名
      */
     String getUsername();
 
     /**
-     * 弹幕发送者头像地址
+     * 获取社交动作触发者的头像地址
      *
+     * @return 用户头像 URL
      * @since 0.0.11
      */
     default String getUserAvatar() {
@@ -65,7 +75,9 @@ public interface ISocialMsg extends IMsg {
     }
 
     /**
-     * 动作
+     * 获取具体的社交动作类型
+     *
+     * @return 社交动作枚举，例如 FOLLOW（关注）、SHARE（分享）
      */
     SocialActionEnum getSocialAction();
 

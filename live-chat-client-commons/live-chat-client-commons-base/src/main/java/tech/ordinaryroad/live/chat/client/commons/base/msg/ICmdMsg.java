@@ -25,14 +25,32 @@
 package tech.ordinaryroad.live.chat.client.commons.base.msg;
 
 /**
+ * 命令类消息接口，用于处理带有具体指令名称（CMD）的消息。
+ *
+ * @param <CmdEnum> 各平台自定义的命令枚举类型
  * @author mjz
  * @date 2023/10/2
  */
 public interface ICmdMsg<CmdEnum extends Enum<CmdEnum>> extends IMsg {
 
+    /**
+     * 获取命令名称字符串（原始值）
+     *
+     * @return 命令字符串
+     */
     String getCmd();
 
+    /**
+     * 设置命令名称字符串
+     *
+     * @param cmd 命令字符串
+     */
     void setCmd(String cmd);
 
+    /**
+     * 获取解析后的命令枚举对象
+     *
+     * @return 对应的命令枚举
+     */
     CmdEnum getCmdEnum();
 }

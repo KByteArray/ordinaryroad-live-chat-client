@@ -27,7 +27,8 @@ package tech.ordinaryroad.live.chat.client.commons.base.msg;
 import tech.ordinaryroad.live.chat.client.commons.base.constant.LiveStatusAction;
 
 /**
- * 直播状态变化消息
+ * 直播间状态变更消息通用接口。
+ * 当直播间发生开播、关播或进入切片循环播放等状态变化时触发此消息。
  *
  * @author mjz
  * @date 2024/3/10
@@ -35,7 +36,9 @@ import tech.ordinaryroad.live.chat.client.commons.base.constant.LiveStatusAction
 public interface ILiveStatusChangeMsg extends IMsg {
 
     /**
-     * 状态变化
+     * 获取直播间的当前最新状态动作
+     *
+     * @return 状态动作枚举值（如：LIVE_START 开播、LIVE_END 关播等）
      */
     LiveStatusAction getLiveStatusAction();
 

@@ -56,14 +56,26 @@ public class OrLiveChatHttpUtil extends HttpUtil {
     static {
         // Random Chrome Version
         String randomVersion = RandomUtil.randomEle(USER_AGENT_VERSION_LIST);
+        String randomOs = RandomUtil.randomEle(USER_AGENT_OS_LIST);
         USER_AGENT = "Mozilla/5.0 "
                 // os
-                + RandomUtil.randomEle(USER_AGENT_OS_LIST)
+                + randomOs
                 + " AppleWebKit/537.36 (KHTML, like Gecko)"
                 + " Chrome/" + randomVersion
                 + " Safari/537.36"
                 + " Edg/" + randomVersion;
+
         GlobalHeaders.INSTANCE.header(Header.USER_AGENT, USER_AGENT);
+        GlobalHeaders.INSTANCE.header(Header.ACCEPT, "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7");
+        GlobalHeaders.INSTANCE.header(Header.ACCEPT_LANGUAGE, "zh-CN,zh;q=0.9,en;q=0.8");
+        GlobalHeaders.INSTANCE.header("sec-ch-ua", "\"Chromium\";v=\"" + randomVersion.split("\\.")[0] + "\", \"Not_A Brand\";v=\"24\", \"Google Chrome\";v=\"" + randomVersion.split("\\.")[0] + "\"");
+        GlobalHeaders.INSTANCE.header("sec-ch-ua-mobile", "?0");
+        GlobalHeaders.INSTANCE.header("sec-ch-ua-platform", randomOs.contains("Windows") ? "\"Windows\"" : (randomOs.contains("Mac") ? "\"macOS\"" : "\"Linux\""));
+        GlobalHeaders.INSTANCE.header("sec-fetch-dest", "document");
+        GlobalHeaders.INSTANCE.header("sec-fetch-mode", "navigate");
+        GlobalHeaders.INSTANCE.header("sec-fetch-site", "none");
+        GlobalHeaders.INSTANCE.header("sec-fetch-user", "?1");
+        GlobalHeaders.INSTANCE.header("upgrade-insecure-requests", "1");
     }
 
     public static void updateProxyHost(String host) {

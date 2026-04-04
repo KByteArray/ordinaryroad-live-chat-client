@@ -24,6 +24,7 @@
 
 package tech.ordinaryroad.live.chat.client.example.client.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import tech.ordinaryroad.live.chat.client.bilibili.client.BilibiliLiveChatClient;
@@ -44,24 +45,22 @@ import tech.ordinaryroad.live.chat.client.kuaishou.listener.IKuaishouMsgListener
 @Component
 public class LiveChatClientConfiguration {
 
-    private final LiveChatClientConfigurations configurations;
-    private final IBilibiliMsgListener bilibiliSendSmsReplyMsgListener;
-    private final IBilibiliConnectionListener bilibiliConnectionListener;
-    private final IDouyuMsgListener douyuCmdMsgListener;
-    private final IDouyuConnectionListener douyuConnectionListener;
+    @Autowired
+    LiveChatClientConfigurations configurations;
+    @Autowired
+    IBilibiliMsgListener bilibiliSendSmsReplyMsgListener;
+    @Autowired
+    IBilibiliConnectionListener bilibiliConnectionListener;
+    @Autowired
+    IDouyuMsgListener douyuCmdMsgListener;
+    @Autowired
+    IDouyuConnectionListener douyuConnectionListener;
 
-    private final IKuaishouMsgListener kuaishouMsgListener;
-    private final IKuaishouConnectionListener kuaishouConnectionListener;
+    @Autowired
+    IKuaishouMsgListener kuaishouMsgListener;
+    @Autowired
+    IKuaishouConnectionListener kuaishouConnectionListener;
 
-    public LiveChatClientConfiguration(LiveChatClientConfigurations configurations, IBilibiliMsgListener bilibiliSendSmsReplyMsgListener, IBilibiliConnectionListener bilibiliConnectionListener, IDouyuMsgListener douyuCmdMsgListener, IDouyuConnectionListener douyuConnectionListener, IKuaishouMsgListener kuaishouMsgListener, IKuaishouConnectionListener kuaishouConnectionListener) {
-        this.configurations = configurations;
-        this.bilibiliSendSmsReplyMsgListener = bilibiliSendSmsReplyMsgListener;
-        this.bilibiliConnectionListener = bilibiliConnectionListener;
-        this.douyuCmdMsgListener = douyuCmdMsgListener;
-        this.douyuConnectionListener = douyuConnectionListener;
-        this.kuaishouMsgListener = kuaishouMsgListener;
-        this.kuaishouConnectionListener = kuaishouConnectionListener;
-    }
 
     @Bean
     public BilibiliLiveChatClient bilibiliLiveChatClient() {
@@ -82,4 +81,5 @@ public class LiveChatClientConfiguration {
     public DouyinLiveChatClient douyinLiveChatClient(DouyinMsgListener douyinMsgListener, DouyinConnectionListener douyinConnectionListener) {
         return new DouyinLiveChatClient(configurations.getDouyin(), douyinMsgListener, douyinConnectionListener);
     }
+
 }

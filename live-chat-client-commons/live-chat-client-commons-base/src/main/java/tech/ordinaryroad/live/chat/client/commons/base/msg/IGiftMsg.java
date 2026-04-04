@@ -25,38 +25,50 @@
 package tech.ordinaryroad.live.chat.client.commons.base.msg;
 
 /**
+ * 礼物消息通用接口。
+ * 包含礼物名称、ID、价格、数量以及赠送者和接收者的详细信息。
+ *
  * @author mjz
  * @date 2023/9/8
  */
 public interface IGiftMsg extends IMsg {
 
     /**
-     * 粉丝牌名称
+     * 获取粉丝牌名称
+     *
+     * @return 粉丝牌名称，默认返回空字符串
      */
     default String getBadgeName() {
         return "";
     }
 
     /**
-     * 粉丝牌等级
+     * 获取粉丝牌等级
+     *
+     * @return 粉丝牌等级，默认返回 0
      */
     default byte getBadgeLevel() {
         return 0;
     }
 
     /**
-     * 发送方id
+     * 获取礼物赠送者的 UID
+     *
+     * @return 赠送者 UID
      */
     String getUid();
 
     /**
-     * 发送方用户名
+     * 获取礼物赠送者的用户名
+     *
+     * @return 赠送者用户名
      */
     String getUsername();
 
     /**
-     * 发送方头像地址
+     * 获取礼物赠送者的头像地址
      *
+     * @return 头像 URL
      * @since 0.0.11
      */
     default String getUserAvatar() {
@@ -64,39 +76,51 @@ public interface IGiftMsg extends IMsg {
     }
 
     /**
-     * 礼物名称
+     * 获取礼物的名称（如：小电视、大火箭等）
+     *
+     * @return 礼物名称
      */
     String getGiftName();
 
     /**
-     * 礼物图像地址
+     * 获取礼物的图标或图片地址
+     *
+     * @return 礼物图片 URL
      */
     String getGiftImg();
 
     /**
-     * 礼物id
+     * 获取礼物的唯一标识 ID
+     *
+     * @return 礼物 ID
      */
     String getGiftId();
 
     /**
-     * 礼物数量
+     * 获取本次赠送的礼物总数量
      *
-     * @return 礼物数量，可能小于等于0
+     * @return 礼物数量，注意某些平台可能存在组合包导致数量为负值或异常
      */
     int getGiftCount();
 
     /**
-     * 单个礼物价格
+     * 获取礼物的单价
+     *
+     * @return 单个礼物的价格值
      */
     int getGiftPrice();
 
     /**
-     * 接收方id
+     * 获取礼物接收者的 UID（通常是主播）
+     *
+     * @return 接收者 UID
      */
     String getReceiveUid();
 
     /**
-     * 接收方用户名
+     * 获取礼物接收者的用户名
+     *
+     * @return 接收者用户名
      */
     String getReceiveUsername();
 }

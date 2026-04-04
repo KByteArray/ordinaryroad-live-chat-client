@@ -27,6 +27,9 @@ package tech.ordinaryroad.live.chat.client.commons.base.msg;
 import java.io.Serializable;
 
 /**
+ * 消息基础接口，所有消息模型都必须实现此接口。
+ * 继承自 Serializable，支持序列化。
+ *
  * @author mjz
  * @date 2023/8/26
  */

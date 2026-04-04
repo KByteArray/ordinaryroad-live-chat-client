@@ -40,9 +40,7 @@ import tech.ordinaryroad.live.chat.client.kuaishou.config.KuaishouLiveChatClient
 @Configuration
 @ConfigurationProperties(prefix = "tech.ordinaryroad.live.chat.client.example.client.config")
 public class LiveChatClientConfigurations {
-
     private BilibiliLiveChatClientConfig bilibili;
-
     private DouyuLiveChatClientConfig douyu;
     private KuaishouLiveChatClientConfig kuaishou;
     private DouyinLiveChatClientConfig douyin;
